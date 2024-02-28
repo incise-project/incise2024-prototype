@@ -1,0 +1,34 @@
+---
+title: "Articles and interviews"
+
+listing:
+  id: "content-listing"
+  contents: posts
+  type: grid
+  categories: true
+  sort:
+    - "date desc"
+    - "title desc"
+  date-format: "DD-MMM-yyyy"
+  sort-ui: true
+  filter-ui: true
+  grid-item-border: false
+
+format:
+  html:
+    toc: true
+
+execute: 
+  echo: false
+---
+
+Page/article content goes here.
+
+:::{#content-listing}
+:::
+
+<!-- do not remove: always include the footer content -->
+:::{.footer-block}
+{{< include /_bsg-links.qmd >}}
+{{< include /_footer.qmd >}}
+:::

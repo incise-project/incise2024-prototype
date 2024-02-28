@@ -1,13 +1,22 @@
 ---
-format: html
-title: Accessibility statement
+title: "Accessibility statement"
 subtitle: |
   The University of Oxford is committed to providing an accessible web presence
   that gives members of the public and members of the University community full
   access to University information, courses and activities offered publicly
   through the website.
+
+format:
+  html:
+    toc: true
+
+execute: 
+  echo: false
 ---
 
 Holding page for an accessibility statement.
 
+<!-- do not remove: always include the footer content -->
+:::{.footer-block}
 {{< include /_footer.qmd >}}
+:::

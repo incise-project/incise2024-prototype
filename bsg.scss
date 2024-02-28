@@ -105,7 +105,6 @@ main a:hover {
 .quarto-title {
 
   font-family: $headings-font-family;
-  margin: 2rem 0;
 
   p {
     font-size: 1.25rem;
@@ -115,6 +114,12 @@ main a:hover {
     text-transform: uppercase;
   }
 
+}
+
+#title-block-header {
+  margin: 2.5rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $bsg-warm-grey1;
 }
 
 /*-- navbar themeing --*/
@@ -188,8 +193,11 @@ nav.navbar .dropdown-item:hover, .dropdown-item:focus {
 
 /*-- footer themeing --*/
 
-.footer-banner {
+.footer-block {
   margin-top: 3rem;
+}
+
+.site-footer {
   border-top: 1px solid $bsg-warm-grey1;
   padding: 20px;
   font-size: 0.8rem;
@@ -200,10 +208,6 @@ nav.navbar .dropdown-item:hover, .dropdown-item:focus {
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 500;
-  }
-
-  .anchorjs-link {
-    display: none;
   }
 
   a {
@@ -289,18 +293,10 @@ a.fom-link {
     font-weight: 500;
   }
 
-  .anchorjs-link {
-    display: none;
-  }
-
 }
 
 
 .latest-content {
-
-  .anchorjs-link {
-    display: none;
-  }
 
   .grid {
     grid-gap: 0px;
@@ -404,7 +400,7 @@ a.fom-link {
 
 .results-2024 {
 
-  margin-bottom: 2rem;
+  margin-bottom: 0;
   padding: 2rem 0;
   background-color: $bsg-mid-blue;
   color: #ffffff;
@@ -414,10 +410,6 @@ a.fom-link {
     text-transform: uppercase;
     color: #ffffff;
     margin-top: 0px;
-  }
-
-  .anchorjs-link {
-    display: none;
   }
 
   a.fom-link {
@@ -432,7 +424,114 @@ a.fom-link {
 
 }
 
+.about-site {
+
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+  background-color: $bsg-bg-blue;
+
+  h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border-bottom: none;
+    color: $bsg-light-blue;
+    margin-top: 0px;
+  }
+
+}
+
 /*-- observable formatting --*/
 .observablehq svg text {
   font-family: $font-family-sans-serif;
+}
+
+/*-- page/post metadata --*/
+
+.quarto-title-meta {
+  font-family: $headings-font-family;
+}
+
+.quarto-title-meta-heading {
+  color: $bsg-warm-grey6;
+  opacity: 1;
+  font-weight: 500 !important;
+}
+
+.quarto-title .quarto-categories .quarto-category {
+  border-radius: 0;
+  border-color: $bsg-warm-grey6;
+  font-size: 0.7rem;
+  color: $bsg-warm-grey6;
+  opacity: 1;
+}
+
+.quarto-category {
+  border-radius: 0;
+  border-color: $bsg-warm-grey6;
+  font-size: 0.7rem;
+  color: $bsg-warm-grey6;
+  opacity: 1;
+}
+
+.quarto-category a:hover {
+  background-color: unset;
+}
+
+.quarto-category:hover {
+  border-color: $bsg-light-blue !important;
+  color: $bsg-light-blue;
+}
+
+/*-- interviews --*/
+
+.interview {
+  margin-top: 1rem;
+
+  strong {
+    font-weight: 500;
+    font-family: $headings-font-family;
+    display: block;
+    color: $bsg-mid-blue;
+    border-left: 4px solid $bsg-warm-grey1;
+    padding-left: 0.5rem;
+  }
+
+  em {
+    display:block;
+    color: unset;
+    border-left: 2px solid $bsg-warm-grey1;
+    padding-left: 0.5rem;
+  }
+
+
+}
+
+/*-- listing pages--*/
+
+.card {
+  background-color: $bsg-bg-beige;
+}
+
+.card-title {
+  font-family: $headings-font-family;
+  font-weight: 500;
+  color: $bsg-dark-blue;
+}
+
+.card-attribution {
+  color: $bsg-mid-blue !important;
+  font-family: $headings-font-family;
+}
+
+.quarto-grid-item .card-title {
+  margin-bottom: 0.5rem;
+}
+
+.quarto-grid-item .listing-categories .listing-category {
+  border-radius: 0;
+  border: 1px solid $bsg-warm-grey6 !important;
+  font-size: 0.7rem;
+  color: $bsg-warm-grey6;
+  opacity: 1;
+  padding: 0.1rem 0.5rem !important;
 }

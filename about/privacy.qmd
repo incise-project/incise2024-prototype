@@ -1,10 +1,20 @@
 ---
-format: html
-title: Privacy policy
+title: "Privacy policy"
 subtitle: |
   How we process and protect your personal information on our website.
+
+format:
+  html:
+    toc: true
+
+execute: 
+  echo: false
 ---
 
 Holding page for privacy policy.
 
+<!-- do not remove: always include the footer content -->
+:::{.footer-block}
 {{< include /_footer.qmd >}}
+:::
+

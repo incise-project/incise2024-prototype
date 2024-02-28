@@ -1,4 +1,4 @@
-:::{.footer-banner .column-screen}
+:::{.site-footer .column-screen}
 
 :::{.grid}
 :::{.g-col-12 .g-col-md-2}

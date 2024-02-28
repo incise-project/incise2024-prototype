@@ -1,8 +1,18 @@
 ---
-format: html
-title: About the InCiSE project
+title: "About the InCiSE project"
+
+format:
+  html:
+    toc: true
+
+execute: 
+  echo: false
 ---
 
 Holding page for about content.
 
+<!-- do not remove: always include the footer content -->
+:::{.footer-block}
 {{< include /_footer.qmd >}}
+:::
+

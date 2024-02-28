@@ -3,6 +3,7 @@ format:
   html:
     toc: false
     css: sitehome.css
+    anchor-sections: false
 
 execute: 
   echo: false
@@ -105,13 +106,38 @@ Country X tops the 2024 edition of the Index
 [Read the summary of the 2024 results](){.fom-link}
 :::
 :::{.g-col-12 .g-col-md-4 .headline-links}
-- [Explore the results]()
-- [Read thematic and country profiles]()
-- [Learn how to use the Index]()
+- [View the results]()
+- [Read articles and interviews]()
+- [Explore the data]()
 - [Read the technical methodology]()
 :::
 :::
 
+:::
+:::
+
+:::{.column-screen .about-site}
+:::{.column-body}
+:::{.g-col-12}
+## About the Index
+
+:::{.lead}
+The Index provides comparative benchmarking data on the activities and
+performance of civil services around the world.
+:::
+
+The Index is a benchmarking and peer learning project based at the
+[Blavatnik School of Governemnt](https://www.bsg.ox.ac.uk) that aims to help
+senior officials, those leading reform efforts and those who hold civil
+service leaders to account.
+
+Using its measurement framework, the Index brings together X individual data
+points from Y sources. Alongside the overall Index results, through this
+website you can: read articles discussing themes and countries covered in the
+results and interviews with those leading reform efforts, explore the data
+in-depth, and read the technical methodology.
+
+:::
 :::
 :::
 
@@ -166,52 +192,9 @@ Summary paragraph. [Read more]().
 :::
 :::
 
-Placeholder text about content...
-
 :::
 
 
-:::{.bsg-links .column-screen}
-:::{.column-body}
-## More from the Blavatnik School of Government
-
-:::{.grid}
-
-:::{.g-col-12 .g-col-md-3}
-### Study
-The School offers graduate taught and research degrees,
-executive education programmes, short and online courses.
-
-[Find out more](https://www.bsg.ox.ac.uk/study){.fom-link}
-:::
-
-:::{.g-col-12 .g-col-md-3}
-### Research
-The School's research underpins our mission to inspire and support
-better government and public policy around the world.
-
-[Find out more](https://www.bsg.ox.ac.uk/research){.fom-link}
-:::
-
-:::{.g-col-12 .g-col-md-3}
-### Events
-The School hosts hundreds of events each year, many of which are available
-online.
-
-[Find out more](https://www.bsg.ox.ac.uk/events){.fom-link}
-:::
-
-:::{.g-col-12 .g-col-md-3}
-### Voices
-Read opinion and insight from School faculty, students, alumni and others.
-
-[Read more](https://www.bsg.ox.ac.uk/voices){.fom-link}
-:::
-:::
-
-:::
-
-:::
-
-
+{{< include /_bsg-links.qmd >}}
 {{< include /_footer.qmd >}}
+

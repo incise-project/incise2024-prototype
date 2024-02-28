@@ -1,0 +1,43 @@
+---
+title: "Example interview"
+subtitle: |
+  "An example interview for testing purposes."
+image: "/imgs/incise2019_reports.jpg"
+image-alt: "A stack of copies of the 2019 InCiSE reports"
+date: "2024-02-28"
+author: "A N OTHER"
+categories:
+  - draft
+  - example
+  - interview
+
+format:
+  html:
+    toc: true
+
+execute: 
+  echo: false
+---
+
+Background about the interviewer/interviewee.
+
+:::{.interview}
+**double asterisks: denote interviewer question**
+*single asterisks: denote interviewee response*
+
+**double asterisks: denote interviewer question**
+*single asterisks: denote interviewee response*
+
+Aside between groups of questions.
+
+**double asterisks: denote interviewer question**
+*single asterisks: denote interviewee response*
+
+**double asterisks: denote interviewer question**
+*single asterisks: denote interviewee response*
+:::
+
+<!-- do not remove: always include the footer content -->
+:::{.footer-block}
+{{< include /_footer.qmd >}}
+:::

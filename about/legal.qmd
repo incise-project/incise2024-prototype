@@ -1,6 +1,12 @@
 ---
-format: html
-title: Legal notices
+title: "Legal notices"
+
+format:
+  html:
+    toc: true
+
+execute: 
+  echo: false
 ---
 
 <!-- Based on the Our World in Data legal notices -->
@@ -56,4 +62,8 @@ services, for your use of the websites and services, or for the conduct of
 third parties whether on the websites, in connection with the services or
 otherwise relating to the websites or services.
 
+<!-- do not remove: always include the footer content -->
+:::{.footer-block}
 {{< include /_footer.qmd >}}
+:::
+
