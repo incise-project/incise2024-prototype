@@ -1,0 +1,15 @@
+/*-- css specific for homepage styling --*/
+
+main {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px !important;
+}
+
+.navbar-title {
+  display: none !important;
+}
+
+.footer-banner {
+  margin-top: 0px;
+}

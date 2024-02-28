@@ -1,0 +1,8 @@
+---
+format: html
+title: About the InCiSE project
+---
+
+Holding page for about content.
+
+{{< include /_footer.qmd >}}

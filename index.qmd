@@ -1,0 +1,217 @@
+---
+format:
+  html:
+    toc: false
+    css: sitehome.css
+
+execute: 
+  echo: false
+---
+
+```{ojs, setup}
+//| output: false
+
+Plot = import("https://esm.sh/@observablehq/plot")
+
+dummy_data = [
+  {cc_iso3c: "ABC", value: 1.000, colour_group: "#ffffff"}, 
+  {cc_iso3c: "BCD", value: 0.974, colour_group: "#ffffff"},
+  {cc_iso3c: "CDE", value: 0.949, colour_group: "#ffffff"}, 
+  {cc_iso3c: "DEF", value: 0.923, colour_group: "#ffffff"},
+  {cc_iso3c: "EFG", value: 0.897, colour_group: "#ffffff"}, 
+  {cc_iso3c: "FGH", value: 0.872, colour_group: "#ffffff"},
+  {cc_iso3c: "GHI", value: 0.846, colour_group: "#ffffff"}, 
+  {cc_iso3c: "HIJ", value: 0.821, colour_group: "#ffffff"},
+  {cc_iso3c: "IJK", value: 0.795, colour_group: "#ffffff"}, 
+  {cc_iso3c: "JKL", value: 0.769, colour_group: "#ffffff"},
+  {cc_iso3c: "KLM", value: 0.744, colour_group: "#ffffff"}, 
+  {cc_iso3c: "MNO", value: 0.718, colour_group: "#ffffff"},
+  {cc_iso3c: "NOP", value: 0.692, colour_group: "#ffffff"}, 
+  {cc_iso3c: "OPQ", value: 0.667, colour_group: "#ffffff"},
+  {cc_iso3c: "PQR", value: 0.641, colour_group: "#ffffff"}, 
+  {cc_iso3c: "QRS", value: 0.615, colour_group: "#ffffff"},
+  {cc_iso3c: "RST", value: 0.590, colour_group: "#ffffff"}, 
+  {cc_iso3c: "STU", value: 0.564, colour_group: "#ffffff"},
+  {cc_iso3c: "TUV", value: 0.538, colour_group: "#ffffff"}, 
+  {cc_iso3c: "UVW", value: 0.513, colour_group: "#ffffff"},
+  {cc_iso3c: "VWX", value: 0.487, colour_group: "#ffffff"}, 
+  {cc_iso3c: "XYZ", value: 0.462, colour_group: "#ffffff"},
+  {cc_iso3c: "YZA", value: 0.436, colour_group: "#ffffff"}, 
+  {cc_iso3c: "ZAB", value: 0.410, colour_group: "#ffffff"},
+  {cc_iso3c: "ZYX", value: 0.385, colour_group: "#ffffff"}, 
+  {cc_iso3c: "YXW", value: 0.359, colour_group: "#ffffff"},
+  {cc_iso3c: "XWV", value: 0.333, colour_group: "#ffffff"}, 
+  {cc_iso3c: "WVU", value: 0.308, colour_group: "#ffffff"},
+  {cc_iso3c: "VUT", value: 0.282, colour_group: "#ffffff"}, 
+  {cc_iso3c: "UTS", value: 0.256, colour_group: "#ffffff"},
+  {cc_iso3c: "TSR", value: 0.231, colour_group: "#ffffff"}, 
+  {cc_iso3c: "SRQ", value: 0.205, colour_group: "#ffffff"},
+  {cc_iso3c: "RQP", value: 0.179, colour_group: "#ffffff"}, 
+  {cc_iso3c: "QPO", value: 0.154, colour_group: "#ffffff"},
+  {cc_iso3c: "PON", value: 0.128, colour_group: "#ffffff"}, 
+  {cc_iso3c: "ONM", value: 0.103, colour_group: "#ffffff"},
+  {cc_iso3c: "NML", value: 0.077, colour_group: "#ffffff"}, 
+  {cc_iso3c: "MLK", value: 0.051, colour_group: "#ffffff"},
+  {cc_iso3c: "LKJ", value: 0.026, colour_group: "#ffffff"}, 
+  {cc_iso3c: "KJI", value: 0.000, colour_group: "#ffffff"}
+]
+
+```
+
+:::{.site-title-block}
+:::{.column-screen .site-title}
+:::{.column-body-outset}
+# THE INTERNATIONAL CIVIL SERVICE EFFECTIVENESS (InCiSE) PROJECT
+:::
+:::
+:::
+
+:::{.column-screen .results-2024}
+:::{.column-body}
+## The 2024 Index results
+
+:::{.grid}
+:::{.g-col-12 .g-col-md-3 .results-chart}
+```{ojs}
+Plot.plot({
+  width: 200,
+  height: 550,
+  marginLeft: 20,
+  marginRight: 0,
+  x: {label: null, grid: null, domain: [-0.1, 1], ticks: 0},
+  y: {label: null, axis: null},
+  marks: [
+    Plot.barX(dummy_data, {
+      x: "value",
+      y: "cc_iso3c",
+      fill: "colour_group",
+      sort: {y: "x", reverse: true}
+    }),
+    Plot.text(dummy_data, {
+      x: -0.05,
+      y: "cc_iso3c",
+      text: "cc_iso3c",
+      fill: "colour_group",
+      textAnchor: "end",
+      fontWeight: "600",
+      sort: {y: "x", reverse: true}
+    })
+  ]
+})
+```
+:::
+:::{.g-col-12 .g-col-md-5 .headline-text}
+Country X tops the 2024 edition of the Index
+[Read the summary of the 2024 results](){.fom-link}
+:::
+:::{.g-col-12 .g-col-md-4 .headline-links}
+- [Explore the results]()
+- [Read thematic and country profiles]()
+- [Learn how to use the Index]()
+- [Read the technical methodology]()
+:::
+:::
+
+:::
+:::
+
+:::{.latest-content}
+## Latest content
+
+:::{.grid .article-row}
+:::{.g-col-12 .g-col-md-4 .article-card}
+:::{.card-image .draft-image}
+IMAGE
+:::
+### Article heading
+Summary paragraph. [Read more]().
+:::
+:::{.g-col-12 .g-col-md-4 .article-card}
+:::{.card-image .draft-image}
+IMAGE
+:::
+### Article heading
+Summary paragraph. [Read more]().
+:::
+:::{.g-col-12 .g-col-md-4 .article-card}
+:::{.card-image .draft-image}
+IMAGE
+:::
+### Article heading
+Summary paragraph. [Read more]().
+:::
+:::
+
+:::{.grid .article-row}
+:::{.g-col-12 .g-col-md-4 .article-card}
+:::{.card-image .draft-image}
+IMAGE
+:::
+### Article heading
+Summary paragraph. [Read more]().
+:::
+:::{.g-col-12 .g-col-md-4 .article-card}
+:::{.card-image .draft-image}
+IMAGE
+:::
+### Article heading
+Summary paragraph. [Read more]().
+:::
+:::{.g-col-12 .g-col-md-4 .article-card}
+:::{.card-image .draft-image}
+IMAGE
+:::
+### Article heading
+Summary paragraph. [Read more]().
+:::
+:::
+
+Placeholder text about content...
+
+:::
+
+
+:::{.bsg-links .column-screen}
+:::{.column-body}
+## More from the Blavatnik School of Government
+
+:::{.grid}
+
+:::{.g-col-12 .g-col-md-3}
+### Study
+The School offers graduate taught and research degrees,
+executive education programmes, short and online courses.
+
+[Find out more](https://www.bsg.ox.ac.uk/study){.fom-link}
+:::
+
+:::{.g-col-12 .g-col-md-3}
+### Research
+The School's research underpins our mission to inspire and support
+better government and public policy around the world.
+
+[Find out more](https://www.bsg.ox.ac.uk/research){.fom-link}
+:::
+
+:::{.g-col-12 .g-col-md-3}
+### Events
+The School hosts hundreds of events each year, many of which are available
+online.
+
+[Find out more](https://www.bsg.ox.ac.uk/events){.fom-link}
+:::
+
+:::{.g-col-12 .g-col-md-3}
+### Voices
+Read opinion and insight from School faculty, students, alumni and others.
+
+[Read more](https://www.bsg.ox.ac.uk/voices){.fom-link}
+:::
+:::
+
+:::
+
+:::
+
+
+{{< include /_footer.qmd >}}

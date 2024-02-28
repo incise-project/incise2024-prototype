@@ -1,0 +1,59 @@
+---
+format: html
+title: Legal notices
+---
+
+<!-- Based on the Our World in Data legal notices -->
+<!-- https://ourworldindata.org/about#legal-disclaimer -->
+
+## Copyright & licensing
+All visualizations, data and articles produced by the Blavatnik School of
+Government are open access under the
+[Creative Commons BY 4.0 licence](https://creativecommons.org/licenses/by/4.0/).
+
+You have permission to use, distribute and reproduce these in any medium,
+provided the source and authors are credited. All the software are code we
+write is open source and made available via GitHub using the permissive
+[MIT license](https://choosealicense.com/licenses/mit/).
+
+All other material, including data produced by third parties and made available
+by the Blavatnik School of Government, is subject to the license terms from the
+original third-party authors.
+
+Full details of third-party authors are provided in the methodology section of
+this website.
+
+## Legal disclaimer
+
+To the fullest extent permitted by the applicable law, the Blavatnik School of
+Government offers the website and services as-is and makes no representations
+or warranties of any kind concerning the websites or services, express,
+implied, statutory or otherwise, including, without limitation, warranties of
+title, merchantability, fitness for a particular purpose, or non-infringement.
+The Blavatnik School of Government does not warrant that the functions or
+content contained on the website or services will be uninterrupted or
+error-free, that defects will be corrected, or that the Blavatnik School of
+Government servers are free of viruses or other harmful components.
+The Blavatnik School of Government does not warrant or make any representation
+regarding use or the result of use of the content in terms of accuracy,
+reliability, or otherwise.
+
+Except to the extent required by applicable law and then only to that extent,
+in no event will the Blavatnik School of Government, or the people working on
+and related to this website be liable to you on any legal theory for any
+incidental, direct, indirect, punitive, actual, consequential, special,
+exemplary or other damages, including without limitation, loss of revenue or
+income, lost profits, pain and suffering, emotional distress, cost of
+substitute goods or services, or similar damages suffered or incurred by you or
+any third party that arise in connection with the websites or services (or the
+termination thereof for any reason), even if the Blavatnik School of Government
+has been advised of the possibility of such damages.
+
+The Blavatnik School of Government shall not be responsible or liable
+whatsoever in any manner for any content posted on the websites or services
+(including claims of infringement relating to content posted on the websites or
+services, for your use of the websites and services, or for the conduct of
+third parties whether on the websites, in connection with the services or
+otherwise relating to the websites or services.
+
+{{< include /_footer.qmd >}}

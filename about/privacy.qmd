@@ -1,0 +1,10 @@
+---
+format: html
+title: Privacy policy
+subtitle: |
+  How we process and protect your personal information on our website.
+---
+
+Holding page for privacy policy.
+
+{{< include /_footer.qmd >}}
