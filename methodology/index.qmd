@@ -1,0 +1,30 @@
+---
+title: "Technical methodlogy"
+subtitle: |
+  How we collate and process data to calculate the Index
+
+listing:
+  id: "methodology-listing"
+  contents: articles
+  type: default
+  date-format: "DD-MMM-yyyy"
+  fields: [title, subtitle]
+
+format:
+  html:
+    toc: false
+    title-block-banner: true
+
+execute: 
+  echo: false
+---
+
+The Index provides comparative benchmarking data on the activities and
+performance of civil services around the world. Using its measurement
+framework, the Index brings together X individual data points from Y sources.
+The articles in this section explain the methodology used to collate, process
+and calculate the Index.
+
+
+:::{#methodology-listing}
+:::

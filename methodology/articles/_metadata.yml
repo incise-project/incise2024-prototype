@@ -1,0 +1,5 @@
+format:
+  html:
+    toc: true
+    back-to-top-navigation: true
+

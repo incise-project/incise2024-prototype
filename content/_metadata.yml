@@ -1,0 +1,4 @@
+format:
+  html:
+    title-block-banner: true
+    css: content.css

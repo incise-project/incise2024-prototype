@@ -12,9 +12,3 @@ execute:
 ---
 
 Holding page for privacy policy.
-
-<!-- do not remove: always include the footer content -->
-:::{.footer-block}
-{{< include /_footer.qmd >}}
-:::
-

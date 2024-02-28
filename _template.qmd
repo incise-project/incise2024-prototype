@@ -1,9 +1,7 @@
 ---
 title: "Page/article title"
 subtitle: |
-  "Page/article subtitle"
-description: |
-  "A description for use in content listings"
+  Page/article subtitle
 image: "path/to/preview/img.png"
 image-alt: "Alt text for the image"
 date: "YYYY-MM-DD"

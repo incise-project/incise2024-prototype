@@ -193,8 +193,3 @@ Summary paragraph. [Read more]().
 :::
 
 :::
-
-
-{{< include /_bsg-links.qmd >}}
-{{< include /_footer.qmd >}}
-

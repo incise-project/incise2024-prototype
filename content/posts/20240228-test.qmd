@@ -1,15 +1,15 @@
 ---
 title: "Example article 1"
 subtitle: |
-  "An example article for testing purposes"
+  An example article for testing purposes
 image: "/imgs/incise2019_reports.jpg"
 image-alt: "A stack of copies of the 2019 InCiSE reports"
 date: "2024-02-26"
 author: "A N OTHER"
 categories:
-  - draft
   - example
-  - article
+  - digital
+  - country-a
 
 format:
   html:
@@ -31,8 +31,3 @@ More content, don't go beyond an L3 heading.
 
 Use double **asterisks** to denote bold text. Lighter emphasis is also
 available using single *asterisks* but should be avoided.
-
-<!-- do not remove: always include the footer content -->
-:::{.footer-block}
-{{< include /_footer.qmd >}}
-:::

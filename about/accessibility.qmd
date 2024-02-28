@@ -15,8 +15,3 @@ execute:
 ---
 
 Holding page for an accessibility statement.
-
-<!-- do not remove: always include the footer content -->
-:::{.footer-block}
-{{< include /_footer.qmd >}}
-:::

@@ -3,6 +3,7 @@ project:
 
 website:
   title: "International Civil Service Effectiveness Index"
+  page-navigation: true
   navbar:
     logo: imgs/bsg-logo.svg
     logo-alt: "Blavatnik School of Government logo"
@@ -19,7 +20,7 @@ website:
           - text: "About"
             href: "about/index.qmd"
           - text: "Methodology"
-            href: "about/index.qmd"
+            href: "methodology/index.qmd"
           - text: "The Blavatnik School of Government"
             href: "https://www.bsg.ox.ac.uk"
 
@@ -30,11 +31,12 @@ format:
     css: bsg.css
     toc: true
     include-in-header: _banner.html
+    include-after-body: _footer.html
     date-format: "DD MMM YYYY"
     grid:
       sidebar-width: 0px
-      body-width: 1000px
-      margin-width: 200px
+      body-width: 900px
+      margin-width: 250px
 
 execute:
   freeze: true

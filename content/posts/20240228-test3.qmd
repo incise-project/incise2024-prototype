@@ -7,9 +7,10 @@ image-alt: "A stack of copies of the 2019 InCiSE reports"
 date: "2024-02-28"
 author: "A N OTHER"
 categories:
-  - draft
   - example
   - interview
+  - country-a
+  - data
 
 format:
   html:
@@ -35,9 +36,4 @@ Aside between groups of questions.
 
 **double asterisks: denote interviewer question**
 *single asterisks: denote interviewee response*
-:::
-
-<!-- do not remove: always include the footer content -->
-:::{.footer-block}
-{{< include /_footer.qmd >}}
 :::

@@ -1,5 +1,7 @@
 ---
 title: "Articles and interviews"
+subtitle: |
+  Opinion, insight and research about civil service reform practices
 
 listing:
   id: "content-listing"
@@ -25,10 +27,4 @@ execute:
 Page/article content goes here.
 
 :::{#content-listing}
-:::
-
-<!-- do not remove: always include the footer content -->
-:::{.footer-block}
-{{< include /_bsg-links.qmd >}}
-{{< include /_footer.qmd >}}
 :::

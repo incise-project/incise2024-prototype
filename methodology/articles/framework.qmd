@@ -1,13 +1,12 @@
 ---
-title: "Page/article title"
+title: "Our approach and measurement framework"
 subtitle: |
-  "Page/article subtitle"
-description: |
-  "A description for use in content listings"
+  The rationale for measuring and comparing national civil services
 image: "path/to/preview/img.png"
 image-alt: "Alt text for the image"
-date: "YYYY-MM-DD"
+date: "2024-01-01"
 author: "A N OTHER"
+order: 1
 
 format:
   html:
@@ -29,3 +28,11 @@ More content, don't go beyond an L3 heading.
 
 Use double **asterisks** to denote bold text. Lighter emphasis is also
 available using single *asterisks* but should be avoided.
+
+:::{.grid .custom-page-nav}
+:::{.g-col-12 .g-col-md-6 .nav-page .nav-page-previous}
+:::
+:::{.g-col-12 .g-col-md-6 .nav-page .nav-page-next}
+[Data processing](data_processing.qmd){.pagination-link}
+:::
+:::

@@ -117,10 +117,23 @@ main a:hover {
 }
 
 #title-block-header {
-  margin: 2.5rem 0;
-  padding-bottom: 1rem;
+  margin: 1rem 0;
+  padding-bottom: 2rem;
   border-bottom: 1px solid $bsg-warm-grey1;
 }
+
+.quarto-title-banner {
+
+  background-color: unset;
+  color: $bsg-dark-blue;
+  padding-bottom: 0;
+
+  .quarto-title h1.title {
+    font-weight: 500;
+  }
+
+}
+
 
 /*-- navbar themeing --*/
 
@@ -282,6 +295,7 @@ a.fom-link {
     font-size: 1rem;
     text-transform: uppercase;
     border-bottom: none;
+    font-weight: 500;
   }
 
   h2 {
@@ -473,12 +487,17 @@ a.fom-link {
   opacity: 1;
 }
 
-.quarto-category a:hover {
-  background-color: unset;
-}
-
 .quarto-category:hover {
   border-color: $bsg-light-blue !important;
+}
+
+.quarto-title .quarto-categories .quarto-category a {
+  background-color: unset;
+  color: $bsg-warm-grey6;
+}
+
+.quarto-title .quarto-categories .quarto-category a:hover {
+  background-color: unset;
   color: $bsg-light-blue;
 }
 
@@ -534,4 +553,108 @@ a.fom-link {
   color: $bsg-warm-grey6;
   opacity: 1;
   padding: 0.1rem 0.5rem !important;
+}
+
+
+/*-- page toc --*/
+
+nav[role=doc-toc] {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: $bsg-warm-grey6;
+}
+
+nav[role=doc-toc] a {
+  border-left: 1px solid $bsg-warm-grey6 !important;
+  color: $bsg-warm-grey6 !important;
+  font-weight: 400;
+}
+
+.sidebar nav[role=doc-toc] ul>li>a.active,
+.sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
+  border-left: 3px solid $bsg-warm-grey6 !important;
+  color: $bsg-dark-blue !important;
+  font-weight: 400;
+}
+
+.sidebar nav[role=doc-toc] ul>li>a:hover,
+.sidebar nav[role=doc-toc] ul>li>ul>li>a:hover,
+.sidebar nav[role=doc-toc] a.active:hover,
+.sidebar nav[role=doc-toc] a span:hover {
+  background-color: unset;
+  color: $bsg-light-blue !important;
+  font-weight: 500;
+}
+
+.sidebar nav[role=doc-toc] #toc-title {
+  font-weight: 600;
+  color: $bsg-dark-blue;
+}
+
+/*-- custom page navigation --*/
+
+.custom-page-nav {
+
+  margin-top: 2rem;
+
+  .nav-page p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-page a {
+    color: $bsg-warm-grey6;
+    font-size: 0.875rem;
+  }
+
+  .nav-page a:hover {
+    color: $bsg-mid-blue;
+  }
+
+  a:hover {
+    background-color: unset;
+  }
+
+  .nav-page-previous {
+    text-align: left;
+  }
+
+  .nav-page-previous .pagination-link::before {
+    content: "\276E";
+    padding-right: 0.5em;
+    font-weight: 600;
+  }
+
+  .nav-page-next {
+    text-align: right;
+  }
+
+  .nav-page-next a {
+    justify-content: flex-end;
+  }
+
+  .nav-page-next .pagination-link::after {
+    content: "\276F";
+    padding-left: 0.5em;
+    font-weight: 600;
+  }
+
+}
+
+/*-- categories sidebar --*/
+
+#quarto-margin-sidebar .quarto-listing-category-title {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $bsg-warm-grey6;
+}
+
+#quarto-margin-sidebar .quarto-listing-category {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: $bsg-warm-grey6;
+}
+
+.quarto-listing-category .category.active {
+  color: $bsg-orange;
 }
