@@ -21,17 +21,17 @@
     ]
   },
   {
-    "listing": "/data_explorer/domain1.html",
-    "items": [
-      "/data_explorer/metrics/metric3.html",
-      "/data_explorer/metrics/metric1.html"
-    ]
-  },
-  {
     "listing": "/methodology/index.html",
     "items": [
       "/methodology/framework.html",
       "/methodology/data_processing.html"
+    ]
+  },
+  {
+    "listing": "/data_explorer/domain1.html",
+    "items": [
+      "/data_explorer/metrics/metric3.html",
+      "/data_explorer/metrics/metric1.html"
     ]
   },
   {

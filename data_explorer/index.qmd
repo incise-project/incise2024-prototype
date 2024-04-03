@@ -116,7 +116,7 @@ guide on how to make best use of the data.
 
 [Read our methodology](/methodology/index.qmd){.fom-link}
 
-["How to" guide](user-guide.qmd){.fom-link}
+["How to" guide](user_guide.qmd){.fom-link}
 
 :::
 
