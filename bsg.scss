@@ -363,6 +363,21 @@ nav.navbar .dropdown-item:hover, .dropdown-item:focus {
 
 /*-- draft placeholders --*/
 
+.warning {
+  margin: 0.5rem;
+  padding: 1rem;
+  font-family: $headings-font-family;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  background-color: $bsg-burgundy;
+  color: #ffffff;
+
+  p {
+    margin: 0;
+  }
+
+}
+
 .draft-image {
   min-height: 200px;
   width: 100%;

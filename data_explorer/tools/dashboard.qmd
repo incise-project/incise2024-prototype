@@ -1,5 +1,5 @@
 ---
-pagetitle: "Index 2024 Results dashboard | The InCiSE Project"
+pagetitle: "InCiSE 2019 Results dashboard | The InCiSE Project"
 
 format:
   html:
@@ -11,7 +11,7 @@ execute:
 
 :::{.column-screen .data-title}
 :::{.column-screen-inset}
-# Index 2024 Results dashboard
+# Index 2019 Results dashboard
 :::
 :::
 
@@ -167,6 +167,11 @@ my_country = country_codes[countries.indexOf(usr_country)];
 my_method = method_pages[indicators.indexOf(usr_indicator)];
 
 ```
+
+:::{.column-screen-inset .warning}
+This dashboard is based on the InCiSE 2019 results and is included here as
+an example.
+:::
 
 :::{.column-screen-inset .dashboard}
 
