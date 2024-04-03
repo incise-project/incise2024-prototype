@@ -1,0 +1,93 @@
+---
+title: "Example interview 1"
+subtitle: |
+  An example interview for testing purposes.
+image: "/imgs/incise2019_reports.jpg"
+image-alt: "A stack of copies of the 2019 InCiSE reports"
+date: "2024-02-28"
+author: "A N OTHER"
+categories:
+  - example
+  - interview
+  - country-a
+  - data
+
+citation:
+  type: article-journal
+  container-title: Index
+  url: "https://index.bsg.ox.ac.uk"
+
+format:
+  html:
+    toc: true
+
+execute: 
+  echo: false
+---
+
+Lorem ipsum dolor sit amet, quis habitasse, mollis vel non porta eu sed sociis.
+Venenatis a, cubilia maximus nascetur parturient porta tellus sem ultricies dui.
+Nulla habitant facilisis magna pellentesque malesuada pharetra iaculis vehicula.
+Egestas commodo sem nascetur etiam ut taciti. Curabitur mi ipsum lectus ex
+purus. Bibendum nam metus nam integer.
+
+:::{.interview}
+:::{.question}
+question question question
+:::
+:::{.response}
+Aenean eget vel quam aliquet consequat. Sed et mus sit in iaculis posuere
+convallis sed maximus nec in eleifend! Vitae ante tempor ultrices at neque
+fermentum dictumst. Finibus tellus, duis quam. Eros lacus ipsum ut praesent
+senectus fames himenaeos. Sed augue nunc egestas porta nullam vestibulum. Dis
+inceptos et rutrum amet id amet. Euismod leo at risus commodo.
+:::
+
+:::{.question}
+question question question
+:::
+:::{.response}
+Aenean eget vel quam aliquet consequat. Sed et mus sit in iaculis posuere
+convallis sed maximus nec in eleifend! Vitae ante tempor ultrices at neque
+fermentum dictumst. Finibus tellus, duis quam. Eros lacus ipsum ut praesent
+senectus fames himenaeos. Sed augue nunc egestas porta nullam vestibulum. Dis
+inceptos et rutrum amet id amet. Euismod leo at risus commodo.
+:::
+
+Primis eu sed non. Aliquet consectetur nunc sollicitudin taciti congue aliquam
+vel. Et elit eget sed rhoncus molestie sed at. Feugiat quis auctor id ad!
+Praesent tempus in consequat, justo morbi. Pretium dolor lorem dolor vitae.
+Mi, tristique vehicula id est odio metus vestibulum at sed. Nunc magnis nostra
+pulvinar auctor odio ut hendrerit per varius elit. Accumsan hac sed ac in purus?
+Nulla luctus laoreet nisl mattis ac ultrices. Ut, amet porta lacus, justo sed
+suspendisse. Turpis sem sociosqu magna cursus, arcu aliquam nisl vitae lacus
+luctus. Donec interdum, sociis varius dolor nec, ligula eu vitae elit.
+
+:::{.question}
+question question question
+:::
+:::{.response}
+Aenean eget vel quam aliquet consequat. Sed et mus sit in iaculis posuere
+convallis sed maximus nec in eleifend! Vitae ante tempor ultrices at neque
+fermentum dictumst. Finibus tellus, duis quam. Eros lacus ipsum ut praesent
+senectus fames himenaeos. Sed augue nunc egestas porta nullam vestibulum. Dis
+inceptos et rutrum amet id amet. Euismod leo at risus commodo.
+:::
+
+:::{.question}
+question question question
+:::
+:::{.response}
+Aenean eget vel quam aliquet consequat. Sed et mus sit in iaculis posuere
+convallis sed maximus nec in eleifend! Vitae ante tempor ultrices at neque
+fermentum dictumst. Finibus tellus, duis quam. Eros lacus ipsum ut praesent
+senectus fames himenaeos. Sed augue nunc egestas porta nullam vestibulum. Dis
+inceptos et rutrum amet id amet. Euismod leo at risus commodo.
+:::
+:::
+
+Cras magnis pellentesque, sed. Enim eget nunc sociis aliquam etiam ac. Leo
+varius mattis. Vehicula at iaculis orci malesuada diam pharetra. Fames, sagittis
+sit himenaeos, non ut nisl erat ad ut, eros orci faucibus. Lorem, eros ac cum
+mollis, sit sem luctus. Pharetra est viverra eget euismod. Nec netus sed, id
+sed. Sit blandit aenean vehicula.

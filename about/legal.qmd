@@ -1,0 +1,128 @@
+---
+title: "Legal notices"
+subtitle: |
+  Terms and conditions for using and re-using information and services
+  provided on this website.
+date: 2024-03-15
+date-modified: 2024-03-15
+order: 6
+
+page-navigation: false
+
+format:
+  html:
+    toc: true
+---
+
+## Copyright & licensing
+
+<!-- Based on the Our World in Data legal notices -->
+<!-- https://ourworldindata.org/about#legal-disclaimer -->
+
+All visualizations, data and articles produced by the Blavatnik
+School of Government are open access under the
+[Creative Commons BY 4.0 licence](https://creativecommons.org/licenses/by/4.0/).
+You have permission to use, distribute and reproduce these in any medium,
+provided the source and authors are credited. All the software and code we
+write is open source and made available via
+[GitHub](https://www.github/incise-project) using the permissive
+[MIT license](https://opensource.org/licenses/MIT).
+
+Separate provisions apply to photographic material, see below.
+
+All other material, including data produced by third parties and made available
+by the Blavatnik School of Government, is subject to the license terms from the
+original third-party authors.
+
+### Photo and image credits
+
+Unless otherwise stated the copyright for photographs and images used on this
+website lies with the photographer. Wherever possible acknowledgement and
+licensing for photographs and images is provided on the page where they are
+used. For some photographs and images, such as background images or icons,
+inclusion of credit on the page is not possible.
+
+- The background image on the site homepage is a custom rendering of the
+  [Natural Earth](https://www.naturalearthdata.com/) dataset made by the
+  project team.
+
+## Legal disclaimer
+
+<!-- Based on the University legal notice -->
+<!-- https://www.ox.ac.uk/legal -->
+
+
+1.  Unless otherwise indicated, this Website is the property of the Blavatnik
+    School of Government, University of Oxford, Radcliffe Observatory Quarter,
+    Woodstock Road, Oxford, OX2 6GG ("the School").
+2.  The information placed on this Website by the School ("School Information")
+    has been prepared solely for the purpose of providing selected information
+    about the School, its associates, and about the respective services which
+    it offers.
+3.  The School does not make any warranty that information contained on this
+    Website, or on any site linked to this Website, is complete, accurate or
+    up-to-date; and the School is not responsible for the results of reliance on
+    any such information.
+4.  The School does not make any warranty that use of the Website will be
+    uninterrupted, virus-free or error-free; or that use of the Website will not
+    affect other software or operating systems used to access the Website. Any
+    warranties provided under the general law are expressly excluded to the
+    fullest extent possible. In particular, the School does not warrant that
+    use of the Website will not infringe the rights of any other person or
+    organisation; nor that the Website is of reasonable quality or fit for any
+    particular purpose, even if the School has received notice of an intention
+    to use the Website for that purpose.
+5.  Unless expressly stated otherwise, opinions given on this Website are those
+    of the individuals making them, and not those of the University: the School
+    is not responsible for such opinions or any claims resulting from them.
+6.  To the extent permitted in law, the School accepts no liability for any
+    loss or damage which may be suffered by other parties as a direct or
+    indirect result of using this Website (including loss of profit, loss of
+    opportunity, loss of business, and consequential loss).
+7.  Persons submitting material other than School Information to this Website
+    are solely responsible for the material and for any claims relating to its
+    content, whether made against the University or otherwise. Whilst the School
+    does not exercise editorial control over any content posted to the Website
+    by users, the School reserves the right at its sole discretion to remove any
+    content which it has been notified is objectionable, whether or not the
+    objection is substantiated, and otherwise to review, edit or delete any
+    comments posted by users which it deems defamatory, unlawful, threatening
+    or otherwise objectionable. Notwithstanding the foregoing, and to the extent
+    permitted in law, the School accepts no responsibility or liability for any
+    material communicated by third parties via the Website.
+8.  Subject to the above, those gaining access to this Website are authorised to
+    make use of the Website (and of any chatrooms and interactive facilities
+    which are available through it) for any lawful purposes. The following is a
+    non-exclusive list of uses which are expressly prohibited:
+      a.  using the Website to commit or encourage unlawful acts, including
+          unlawful copying of copyright material;
+      b.  misrepresenting the user's identity or authority;
+      c.  distributing any type of virus or other device intended to cause
+          nuisance, loss or corruption of any information on the Website or
+          accessed through it, or of any systems used to operate the Website or
+          any systems accessed through it;
+      d.  tampering with communications which are not the user's, or making any
+          alteration to any information on the Website;
+      e.  accessing or attempting to access other parties' user accounts;
+      f.  hacking or attempting to hack any part of the Website, or any system
+          used to run it, or any system accessed through the Website;
+      g.  disrupting the flow of communications in interactive areas;
+      h.  storing personal data derived from the Website;
+      i.  posting material which:
+            i.   infringes intellectual property rights;
+            ii.  defames or threatens other people or organisations;
+            iii. is offensive, obscene or hateful, or which other users of the
+                 Website are likely to consider offensive, obscene or hateful.
+9.  Use of this Website by members of the University of Oxford is also subject
+    to the [University's Rules for Computer Use](http://www.it.ox.ac.uk/rules).
+10. The School collects e-mail addresses and other contact details, together
+    with any comments provided voluntarily via this Website. The School also
+    collects information on what pages are visited. This information is used to
+    improve the content of the Website and to make contact for marketing
+    purposes and for the supply of information. Further details are provided in
+    the Website's [privacy policy](privacy.qmd).
+11. These terms are governed by English law, and the Courts of England have
+    exclusive jurisdiction in relation to them.
+12. If any of these terms is found to be illegal or unenforceable by a court of
+    competent jurisdiction, the term(s) in question will be severed; but the
+    remaining terms will continue in force.

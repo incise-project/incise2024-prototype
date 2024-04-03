@@ -1,0 +1,35 @@
+---
+title: "Insights"
+subtitle: |
+  Opinion, research and interviews providing academic and practitioner
+  insights on civil service effectiveness around the world
+
+listing:
+  id: "content-listing"
+  contents: posts
+  type: grid
+  categories: true
+  sort:
+    - "date desc"
+    - "title desc"
+  date-format: "DD-MMM-YYYY"
+  sort-ui: true
+  filter-ui: true
+  grid-item-border: false
+  fields: [image, title, subtitle, categories, author, date]
+
+format:
+  html:
+    toc: true
+    grid:
+      sidebar-width: 0px
+      body-width: 1000px
+
+execute: 
+  echo: false
+---
+
+:::{.article-listing}
+:::{#content-listing}
+:::
+:::

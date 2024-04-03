@@ -1,0 +1,6 @@
+sidebar: sb-results
+
+format:
+  html:
+    css: results.css
+    title-block-banner: true

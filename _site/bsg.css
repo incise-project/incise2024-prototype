@@ -1,0 +1,35 @@
+:root {
+  --bsg-dark-blue:           #002147;
+  --bsg-mid-blue:            #00629B;
+  --bsg-light-blue:          #41B6E6;
+  --bsg-warm-grey6:          #A59C94;
+  --bsg-warm-grey1:          #D7D2CB;
+  --bsg-beige:               #C6AA76;
+  --bsg-orange:              #C4622D;
+  --bsg-purple:              #833177;
+  --bsg-burgundy:            #76232F;
+  --bsg-green:               #719949;
+
+  --bsg-bg-beige:            #f7f5f4;
+  --bsg-bg-section:          #e5e5e5;
+
+  --bsg-bg-blue:             #f2f7fa;
+
+  --note-color:              #848484;
+}
+
+/*-- banner themeing --*/
+
+#quarto-header::before {
+  content: "This website is a prototype for design and user testing.";
+  font-family: "Brandon Text", "Josefin Sans", "Open Sans", "Lato", "Helvetica Neue", Helvetica, sans-serif;
+  height: 2rem;
+  display: block;
+  background-color: var(--bsg-orange);
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 5px;
+  font-size: 0.8rem;
+  font-family: $headings-font-family;
+  border-bottom: 2px solid #ffffff;
+}

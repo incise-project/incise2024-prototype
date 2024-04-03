@@ -1,0 +1,191 @@
+---
+title: "User guide"
+subtitle: "How to get the best out of the Index results and our data"
+
+format:
+  html:
+    toc: true
+    anchor-sections: false
+    title-block-banner: true
+    grid:
+      sidebar-width: 0px
+
+sidebar: false
+page-navigation: false
+
+execute: 
+  echo: false
+---
+
+There are many different ways to use the Index, for helpful hints and tips
+go the section that best reflects your role:
+
+- [I'm a senior official](#sec-user-senior)
+- [I'm a policy or strategy official](#sec-user-policy)
+- [I'm an analyst](#sec-user-analyst)
+- [I'm a minister or politician](#sec-user-politician)
+- [I'm from civil society](#sec-user-senior)
+- [I'm a journalist](#sec-user-media)
+
+## I'm a senior official {#sec-user-senior}
+
+Hac, faucibus odio nunc phasellus vel. Donec nisl commodo interdum turpis leo,
+lorem est lobortis. Non velit iaculis metus sit pellentesque nulla
+pellentesque. Quis nam, purus amet. In et arcu ultrices non ac suspendisse eu
+sed sit! Tristique mauris eu dolor arcu et amet.
+
+- In fames, egestas vitae vehicula efficitur fringilla ornare.
+- Tempor ut magna scelerisque, nunc sem donec facilisi.
+- Porttitor, sed adipiscing venenatis ligula eget hac arcu non id in.
+
+Ac curabitur est morbi mollis vulputate. Eu, maximus non sed ornare. Malesuada
+conubia proin, habitasse, a mauris in non semper nostra.
+
+Orci curae scelerisque adipiscing rutrum convallis feugiat ac praesent proin
+ac. In non neque nisi, et, donec vivamus tempus sed. Duis sed efficitur ut
+amet in. Laoreet volutpat erat eget faucibus maximus sem neque vestibulum dis.
+Maximus risus ut enim finibus, vestibulum faucibus, ut leo. In dapibus aliquet.
+
+Urna id ultrices tempor. Amet laoreet, commodo pulvinar at cum sit. Fermentum
+habitant, justo augue leo eu. Cras, et ultrices, mauris, pharetra odio litora
+velit ex cum ut amet. Eget purus varius mauris ad. Ac praesent augue sed et!
+Ut at ac sit sem cum sed sociosqu in dis leo tortor, quis.
+
+## I'm policy/strategy official {#sec-user-policy}
+
+Turpis porttitor nam ornare vel fermentum. Suscipit donec adipiscing duis
+ullamcorper nascetur nibh ante lorem. Ligula aliquet sed facilisis mi justo
+orci enim, nisl sit. Velit faucibus, convallis primis scelerisque felis
+ultrices consectetur. Nec libero sit et egestas auctor at sed sed.
+
+- Sed condimentum justo.
+- Eu et sed dui faucibus semper nisl in lorem platea, commodo.
+- Dictumst orci ullamcorper, ac urna nullam, mi.
+- Tempor vitae sagittis tempor senectus varius nisl.
+
+Et habitasse sed sit consequat a placerat nullam. Nunc donec. Ac in praesent,
+vehicula a gravida, ex lorem cursus neque nam egestas. Sollicitudin, ante, ut.
+Pharetra dictum facilisis tortor vulputate scelerisque cursus molestie
+habitant. Magna sed praesent ipsum taciti interdum tempor nam erat orci dolor.
+
+Varius vel integer nisl aliquam cras nec varius sit etiam phasellus mauris.
+Ad amet et ligula sed sed quis dolor. Tincidunt eget dictum et eget nisl.
+Tortor faucibus ac consequat eu sapien congue tincidunt neque auctor.
+
+In natoque quam auctor purus pellentesque cursus consectetur. Sodales donec
+pretium libero pretium vitae suspendisse dictumst. Sit euismod nulla arcu
+hendrerit commodo purus. Ac volutpat quis cursus nostra amet laoreet?
+In cursus maximus cum ornare elit aliquam.
+
+## I'm an analyst {#sec-user-analyst}
+
+Neque nullam nisi semper sodales pellentesque pellentesque curae ullamcorper
+nisl tincidunt ad. Imperdiet suspendisse cras vulputate tristique, ut efficitur
+non nam, laoreet suspendisse mi condimentum pharetra potenti. Scelerisque
+ipsum sed montes habitant natoque ornare torquent et commodo commodo. At sed
+bibendum in sed ex placerat lorem et, ultricies. Lobortis ultrices per et
+nulla mi id. Accumsan imperdiet, sapien cursus adipiscing donec purus turpis
+ligula ultrices. Interdum, nullam lobortis, urna ut netus in, eget in.
+
+- Porttitor interdum aptent pellentesque, non adipiscing, sagittis.
+- Aptent volutpat, ipsum, ac, pharetra faucibus natoque, parturient donec urna
+  fermentum.
+- Diam cras senectus rutrum pharetra at.
+- Sit, pellentesque et amet, id sapien ac vestibulum hac.
+- Penatibus porttitor maecenas, ante. Amet nisi nulla mi sodales pretium.
+
+Et, congue, vestibulum pharetra in odio fusce porta ligula, luctus. Praesent
+leo pulvinar in, est, sed at in luctus suscipit. Aliquet accumsan ac arcu
+sit leo. Et semper dui fringilla sed eleifend pulvinar suspendisse sapien
+nisl.
+
+Litora, lacus turpis dolor ipsum, eros suspendisse. Quisque nisi at platea in
+nec vulputate urna in non.
+
+## I'm a minister/politician {#sec-user-politican}
+
+Tortor venenatis justo amet vivamus mauris, molestie sit, ante penatibus fusce
+interdum lobortis. Ligula feugiat at odio ligula in proin sed turpis, eu.
+Fusce litora eu ut pharetra eget dictumst. Velit platea aliquet dictumst eget
+non varius porttitor. Lacinia mi etiam vitae gravida, cum, sed eu quisque
+litora.
+
+- Nunc taciti mollis, aliquam.
+- Libero pulvinar nec vel, convallis.
+- Lorem natoque torquent aliquam et, sed litora arcu.
+
+Eget nibh nam rhoncus, ut et tortor. Urna donec eu sociosqu ornare, gravida
+ligula hendrerit. Eu, diam potenti ac adipiscing eu neque, ut nullam amet
+tempus. In duis at nec. Non blandit aliquam, felis hendrerit et et viverra, in.
+
+Habitasse nibh elementum suscipit eget volutpat eros turpis? Nec vitae primis
+leo eros eget sem sit malesuada hac porttitor proin. Fermentum eget ornare
+blandit sit suspendisse velit rutrum mauris. Sed lectus donec libero in dolor.
+Habitant fames eget, at ut quam, sed, et a lorem sociosqu.
+
+Ligula a pellentesque sed feugiat et, dignissim. At ornare iaculis tincidunt
+habitasse. Cubilia nulla donec hac non urna dapibus ac velit, augue id
+malesuada.
+
+Lobortis, lacinia urna nullam mauris, lacinia nibh. Finibus mi quam porta ac.
+
+## I'm from civil society {#sec-user-civilsociety}
+
+Facilisi molestie gravida dictumst, ante molestie a conubia fringilla ex.
+At risus odio sed eget enim velit senectus pretium. In justo ut egestas fusce
+suspendisse euismod aliquam, nibh viverra, penatibus. Mauris sollicitudin
+faucibus mauris cras dolor porttitor vestibulum sem sociis ligula placerat.
+
+- Diam, enim maximus quisque.
+- Velit cum egestas, in aliquam.
+- Dictum phasellus sit eu ridiculus interdum ridiculus litora.
+- Sed luctus a, hendrerit vestibulum himenaeos vitae diam non.
+
+Nisl porttitor a nullam et imperdiet adipiscing, netus, odio vestibulum
+lacinia, vel. Commodo imperdiet elit sit potenti turpis id aenean natoque
+ligula ac quam maximus non a tincidunt. Dui vitae leo sollicitudin risus non
+consectetur auctor in dui.
+
+Sagittis sapien quam magna finibus ante augue. Litora cubilia nunc leo
+ullamcorper, dignissim cras orci. Amet sed sit eu nibh, enim ad litora ex
+magnis.
+
+Arcu iaculis libero non, et donec? A bibendum scelerisque eu vestibulum ornare,
+in nascetur lacinia. Orci sagittis efficitur iaculis suscipit, mi, lobortis
+varius eleifend.
+
+At purus facilisis, ex, in nibh mi congue nec. Praesent malesuada sed sed
+nulla sociosqu mattis amet eget ac. Ut interdum, eleifend quam taciti
+interdum vestibulum, pharetra eu lorem laoreet ultricies et. Arcu vel.
+
+## I'm a journalist {#sec-user-media}
+
+Ad nulla sed, inceptos magna magnis mauris. Ac aliquam eleifend vitae,
+ultrices aptent ac, at. Non nibh nisl non aliquet auctor aliquet. Sociis,
+donec volutpat vel mollis in elit dui id per vel. Proin auctor libero cum,
+risus elementum suspendisse iaculis.
+
+- Quam enim lorem tincidunt platea ac mauris congue.
+- Ac at tempor, conubia vel ac dolor.
+- Ex est dictum curae ligula finibus consectetur.
+- Dolor quis, nisi sed in hendrerit dignissim ad.
+- Vel sem, ut maximus malesuada, eget, pharetra eros enim vel sed.
+
+Lobortis purus et facilisi aenean feugiat montes. Litora sed est nunc ut a ac.
+Lorem curabitur, nibh rhoncus, aliquet duis mauris. Vitae et eu ut finibus at 
+habitant laoreet viverra aliquam dictumst.
+
+Penatibus augue non faucibus quis torquent molestie ultrices sagittis
+tincidunt. Finibus sed class vivamus vitae aliquam mus molestie.
+
+Vitae non est ex in ornare hendrerit maximus ac. Sed donec suspendisse
+hendrerit, fames proin sed vel. Facilisi condimentum dictum tempus eu sit nec,
+fusce natoque sem efficitur elit finibus quis.
+
+Quisque maximus egestas dis, sed in netus, at netus sit varius. Feugiat
+condimentum volutpat dapibus, commodo diam pellentesque augue quis nulla
+ligula vel, elementum. Aliquam, mi felis ipsum, libero ac nisl. Curabitur
+sodales faucibus tellus mi enim nec, iaculis quis euismod.
+
+Est sed id placerat sagittis, lorem vehicula. Dui enim eget conubia magna metus
+dolor arcu quam dolor ligula nibh, ut. Ligula, hendrerit aptent amet ut vitae.

@@ -1,0 +1,87 @@
+---
+title: "Example article 2"
+subtitle: |
+  An example article for testing purposes
+image: "/imgs/incise2019_reports.jpg"
+image-alt: "A stack of copies of the 2019 InCiSE reports"
+date: "2024-02-27"
+author: "A N OTHER"
+categories:
+  - example
+  - data
+  - capability
+  - public policy
+
+citation:
+  type: article-journal
+  container-title: Index
+  url: "https://index.bsg.ox.ac.uk"
+
+format:
+  html:
+    toc: true
+
+execute: 
+  echo: false
+---
+
+Lorem ipsum dolor sit amet, quis habitasse, mollis vel non porta eu sed sociis.
+Venenatis a, cubilia maximus nascetur parturient porta tellus sem ultricies dui.
+Nulla habitant facilisis magna pellentesque malesuada pharetra iaculis vehicula.
+Egestas commodo sem nascetur etiam ut taciti. Curabitur mi ipsum lectus ex
+purus. Bibendum nam metus nam integer. Aenean eget vel quam aliquet consequat.
+Sed et mus sit in iaculis posuere convallis sed maximus nec in eleifend! Vitae
+ante tempor ultrices at neque fermentum dictumst. Finibus tellus, duis quam.
+Eros lacus ipsum ut praesent senectus fames himenaeos. Sed augue nunc egestas
+porta nullam vestibulum. Dis inceptos et rutrum amet id amet. Euismod leo at
+risus commodo.
+
+## L2 heading
+
+Primis eu sed non. Aliquet consectetur nunc sollicitudin taciti congue aliquam
+vel. Et elit eget sed rhoncus molestie sed at. Feugiat quis auctor id ad!
+Praesent tempus in consequat, justo morbi. Pretium dolor lorem dolor vitae.
+Mi, tristique vehicula id est odio metus vestibulum at sed. Nunc magnis nostra
+pulvinar auctor odio ut hendrerit per varius elit. Accumsan hac sed ac in purus?
+Nulla luctus laoreet nisl mattis ac ultrices. Ut, amet porta lacus, justo sed
+suspendisse. Turpis sem sociosqu magna cursus, arcu aliquam nisl vitae lacus
+luctus. Donec interdum, sociis varius dolor nec, ligula eu vitae elit.
+
+Duis maximus et enim laoreet. Id ultrices suspendisse potenti amet orci.
+Molestie facilisis eget nunc dapibus. Potenti faucibus in vel sed massa sit
+felis, felis et malesuada. Et tempor quis per taciti libero in potenti donec.
+Integer quam orci sed. Leo habitant dolor vestibulum, nec at tincidunt ac.
+Dui est ex luctus ipsum magna iaculis sit taciti. At proin enim nunc leo sit,
+magna nec sapien laoreet erat tempor. Nisl vestibulum lorem. Magna, et ultrices
+dolor ac aptent. Nostra at, maecenas ut. Sit ut, suspendisse. Placerat sed amet
+senectus nisl magna dictumst. Maecenas non molestie in turpis platea phasellus.
+Ut sit suspendisse eros ornare sed dis. Morbi, curabitur at nam ultrices,
+potenti in sit proin. At sociis sed facilisis sed maximus hendrerit.
+
+Cum venenatis ligula aenean justo suspendisse. Sapien sem sapien urna facilisi
+non, fermentum in, ridiculus. Habitant dolor sed sed etiam sociis sed venenatis.
+Fringilla fusce pellentesque felis purus et aptent cum. Nec vitae ligula sodales
+neque eget placerat. Tellus fusce donec maximus, scelerisque faucibus. Aliquet
+risus sagittis pretium felis pulvinar a et primis aliquam ante suspendisse.
+
+## L2 heading
+
+Ipsum at tincidunt. In non elit magna iaculis sed metus pharetra phasellus,
+in varius. Vivamus tincidunt dolor non ornare donec vehicula quis vel. Ut, in
+quisque orci aenean sed enim eu sed. Laoreet posuere ante et semper pharetra,
+neque, sed risus. Arcu ante eu consectetur luctus nec urna. Dictum potenti
+cras odio luctus in sed nisi ex, eget donec. Magnis turpis justo donec, lorem,
+dui sociis sem aliquet sollicitudin eu sed etiam. Sollicitudin sem ipsum risus
+maecenas, fusce sed lacinia ac non suspendisse viverra.
+
+Amet iaculis tempus in. Tincidunt non molestie. Sed nec eu pellentesque pulvinar
+interdum aenean vestibulum. Odio sit tincidunt eu, elementum sagittis neque
+a velit conubia. Sodales sociis odio congue suscipit! Tempus consequat ac ut
+aptent. Posuere ipsum id ultricies orci viverra. Dignissim fusce nibh in vitae
+ut ligula et turpis. Ante, lacus senectus ac varius in amet ut.
+
+Cras magnis pellentesque, sed. Enim eget nunc sociis aliquam etiam ac. Leo
+varius mattis. Vehicula at iaculis orci malesuada diam pharetra. Fames, sagittis
+sit himenaeos, non ut nisl erat ad ut, eros orci faucibus. Lorem, eros ac cum
+mollis, sit sem luctus. Pharetra est viverra eget euismod. Nec netus sed, id
+sed. Sit blandit aenean vehicula.

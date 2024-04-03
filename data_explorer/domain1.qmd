@@ -1,0 +1,53 @@
+---
+title: "Domain 1 data"
+
+listing:
+  id: "theme1-listing"
+  contents: metrics
+  type: grid
+  categories: false
+  sort:
+    - "date desc"
+    - "title desc"
+  include:
+    categories: "theme 1"
+  date-format: "DD-MMM-YYYY"
+  sort-ui: false
+  filter-ui: false
+  grid-item-border: false
+  fields: [title, subtitle, categories]
+
+format:
+  html:
+    toc: false
+    anchor-sections: false
+    title-block-banner: true
+    grid: 
+      sidebar-width: 0px
+
+sidebar: false
+page-navigation: false
+
+execute: 
+  echo: false
+---
+
+Data in domain 1 of the Index
+
+:::{.metric-listing}
+
+## Theme 1
+
+:::{#theme1-listing}
+:::
+
+## Theme 2
+
+`[Metric listing for theme 2]`
+
+## Theme 3
+
+`[Metric listing for theme 3]`
+
+:::
+

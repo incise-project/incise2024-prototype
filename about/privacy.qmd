@@ -1,0 +1,270 @@
+---
+title: "Privacy policy"
+subtitle: |
+  How we process and protect your personal information on our website.
+date: 2024-03-15
+date-modified: 2024-03-15
+order: 4
+
+format:
+  html:
+    toc: true
+    number-sections: true
+---
+
+The Blavatnik School of Government at the University of Oxford ("us", "we", or
+"our") operates this website ([index.bsg.ox.ac.uk]()).
+
+This policy describes how we collect and use your personal data during your
+visit to this website, in accordance with the General Data Protection
+Regulation (GDPR) and related data protection legislation.
+
+This policy is specific to the provision of this website, the Blavatnik School
+of Government has its own [privacy policy](https://www.bsg.ox.ac.uk/privacy-and-cookies),
+where there is a conflict between these two policies then the policy listed on
+the main Blavatnik School of Government website ([www.bsg.ox.ac.uk/privacy-and-cookies](https://www.bsg.ox.ac.uk/privacy-and-cookies))
+will take precedence.
+
+## Who is using your personal data? {#sec-privacy-who}
+
+The University of Oxford (Chancellor, Masters and Scholars of the University
+of Oxford) is the “data controller" for the information that you provide to us
+when visiting this website. This means that we decide how to use it and are
+responsible for looking after it in accordance with the GDPR.
+
+Access to your personal data within the University will be provided to those
+who need to view it as part of their work in connection with the operation of
+this website and to those who need to view it as part of their work in
+connection with the services that you have requested. It may also be shared
+with the third parties described in @sec-privacy-sharing.
+
+Please read the following carefully to understand our views and practices
+regarding your personal data and how we will treat it. We may update this
+policy at any time.
+
+By visiting our site you are accepting and consenting to the practices
+described in this policy.
+
+## Glossary {#sec-privacy-glossary}
+
+Where we refer in this policy to your 'personal data', we mean any recorded
+information that is about you and from which you can be identified. It does
+not include data where your identity has been removed (anonymous data).
+
+Where we refer in this policy to your ‘technical data’, we mean any recorded
+information that is being generated automatically by your visit and actions on
+our site. This data is anonymous and is not linked with your personal data.
+
+Where we refer to the 'processing' of your personal data, we mean anything
+that we do with that information, including collection, use, storage,
+disclosure or retention.
+
+## Types of data we collect about you {#sec-privacy-types}
+
+### Personal data that you provide about yourself
+
+We collect your personal data when you voluntarily provide it to us. For
+example, you may give us: your email address if you choose to receive
+newsletters, updates, or other information from us; your contact information,
+and any other personal data you choose to include, if you email, text, or
+instant message us, or contact us through our websites; and any personal data
+contained in, or included with feedback, comments, photos, videos, or other
+information you submit via online portals, forms, surveys, or interactive
+portions of our websites.
+
+### Technical data that we collect automatically, including cookies and similar technologies
+
+We use cookies and similar tracking technologies to track the activity on this
+website. Cookies are files with a small amount of data which may include an
+anonymous unique identifier.
+
+Cookies are sent to your browser from a website and stored on your device.
+Other tracking technologies are also used such as beacons, tags and scripts to
+collect and track information and to improve and analyze our websites.
+
+We will automatically collect, store, and use the following categories of data
+when you browse and search our site:
+
+- technical information, for example, the type of device (and its unique device
+  identifier) you use to access our site, the Internet protocol (IP) address
+  used to connect your device to the Internet, browser type and version, time
+  zone setting, browser plug-in types and versions, operating system, mobile
+  network information and platform; and
+- information about your visit to our site including the full Uniform Resource
+  Locators (URL), clickstream to, through and from the website (including date
+  and time), pages you viewed, page response times, download errors, length of
+  visits to certain pages, page interaction information (such as scrolling,
+  clicks, and mouse-overs), and methods used to browse away from the page.
+
+Most web browsers allow some control of most cookies through the browser
+settings. To find out more about cookies, including how to see what cookies
+have been set and how to manage and delete them please visit
+[http://www.allaboutcookies.org/](http://www.allaboutcookies.org/).
+
+## How we use your data {#sec-privacy-how-we-use}
+
+We use the collected data for various purposes:
+
+1. to provide and maintain this website;
+1. to provide user support;
+1. to gather analysis or valuable information so that we can improve this
+   website;
+1. to monitor the usage of this website;
+1. to detect, prevent and address technical issues;
+1. to send you communications where we have your consent, for example a mailing
+   list, we will only do this where you have specifically given your consent;
+1. in any other way we may describe when you provide the information;
+1. for any other purpose with your consent.
+
+We will only use your data for the purposes for which we collected it, unless
+we reasonably consider that we need to use it for another related reason and
+that reason is compatible with the original purpose. If we need to use your
+data for an unrelated purpose, we will seek your consent to use it for that
+new purpose.
+
+Please note that we may process your data without your knowledge or consent,
+in compliance with the above rules, where this is required or permitted by law.
+
+## Marketing and communications {#sec-privacy-marketing}
+
+We would like to send you information by email about products, services and
+opportunities which may be of interest to you, for example via a mailing list.
+
+We will not provide your data to other businesses so they can use it for
+marketing purposes.
+
+We will only ask whether you would like us to send you marketing messages when
+you tick the relevant boxes when you subscribe to our mailing list. You will
+have the opportunity to clearly set out what messages you wish to receive by
+ticking these boxes and can unsubscribe from these messages at any time.
+
+## Where we store your data {#sec-privacy-storage}
+
+We may store data collected by the website manually or electronically. The data
+is stored on our secure servers and/or in our premises within the UK.
+
+There may be occasions when we transfer your data outside the European Economic
+Area (EEA), for example, when we communicate with you using a cloud based
+service provider that operates outside the EEA. Such transfers will only take
+place if one of the following applies:
+
+- the country receiving the data is considered by the EU to provide an adequate
+  level of data protection;
+- the organisation receiving the data is covered by an arrangement recognised
+  by the EU as providing an adequate standard of data protection e.g. transfers
+  to companies that are certified under the EU US Privacy Shield;
+- the transfer is governed by approved contractual clauses;
+- the transfer has your consent;
+- the transfer is necessary for the performance of a contract with you or to
+  take steps requested by you prior to entering into that contract; or
+- the transfer is necessary for the performance of a contract with another
+  person, which is in your interests.
+
+Unfortunately, the transmission of information via the internet is not
+completely secure. Although we will do our best to protect your personal data,
+we cannot guarantee the security of data transmitted to the website and any
+transmission is at your own risk.
+
+## Sharing your data with third parties {#sec-privacy-sharing}
+
+We may share your data with third parties who provide services on our behalf,
+such as, our partners who run programmes of study, event partners and co-hosts,
+and those who help us operate our website. All our third-party service
+providers are required to take appropriate security measures to protect your
+data in line with our policies. We do not allow them to use your data for
+their own purposes. We permit them to process your data only for specified
+purposes and in accordance with our instructions.
+
+We may also share your personal data with third parties if we are under a duty
+to disclose or share your personal data in order to comply with any legal
+obligation, or in order to enforce or apply our site terms of use or to protect
+the rights, property or safety of our site, our users, and others.
+
+Where your data is shared with third parties, we will seek to share the
+minimum amount necessary.
+
+## Third party websites {#sec-privacy-websites}
+
+Our site contains links to and from various third party websites. If you
+follow a link to any of these websites, please note that these websites have
+their own privacy policies and that we do not accept any responsibility or
+liability for these policies. Please check these policies before you submit
+any personal data to these websites.
+
+## Retaining your data {#sec-privacy-retention}
+
+We will only retain your data for as long as we need it to fulfil our purposes,
+including any relating to legal, accounting, or reporting requirements.
+
+## Your rights {#sec-privacy-rights}
+
+Under certain circumstances, by law you have the right to:
+
+- **Request access to your data** (commonly known as a "subject access request").
+  This enables you to receive a copy of your data and to check that we are
+  lawfully processing it.
+- **Request correction of your data.** This enables you to ask us to correct any
+  incomplete or inaccurate information we hold about you.
+- **Request erasure of your data.** This enables you to ask us to delete or
+  remove your data where there is no good reason for us continuing to process
+  it. You also have the right to ask us to delete or remove your data where
+  you have exercised your right to object to processing (see below).
+- **Object to processing of your data where we are relying on our legitimate interests**
+  (or those of a third party) and there is something about your particular
+  situation which makes you want to object to processing on this ground. You
+  also have the right to object where we are processing your data for direct
+  marketing purposes.
+- **Request the restriction of processing of your data.** This enables you to
+  ask us to suspend the processing of your data, for example if you want us to
+  establish its accuracy or the reason for processing it.
+- **Request the transfer of your data to another party.**
+
+Depending on the circumstances and the nature of your request it may not be
+possible for us to do what you have asked, for example, where there is a
+statutory or contractual requirement for us to process your data and it would
+not be possible to fulfil our legal obligations if we were to stop. Further
+information on your rights is available from the
+[Information Commissioner's Office (ICO)](https://ico.org.uk/).
+
+Where you have consented to the processing (for example, where you have asked
+us to contact you for marketing purposes) you can withdraw your consent at any
+time by emailing us at [comms@bsg.ox.ac.uk](mailto:comms@bsg.ox.ac.uk). In this
+event, we will stop the processing as soon as we can. However, this will not
+affect the lawfulness of any processing carried out before your withdrawal of
+consent and you may no longer be able to use the site in the same way as you
+did before.
+
+If you want to exercise any of the rights described above or are dissatisfied
+with the way we have used your information, you should contact the University’s
+Information Compliance Team at
+[data.protection@admin.ox.ac.uk](mailto:data.protection@admin.ox.ac.uk).
+The same email address may be used to contact the University’s Data Protection
+Officer. We will seek to deal with your request without undue delay, and in any
+event in accordance with the requirements of the GDPR. Please note that we may
+keep a record of your communications to help us resolve any issues which you
+raise.
+
+If you remain dissatisfied, you have the right to lodge a complaint with the
+Information Commissioner’s Office at
+[https://ico.org.uk/concerns/](https://ico.org.uk/concerns/).
+
+## Cookies {#sec-privacy-cookies}
+
+Our site uses cookies to distinguish you from other users of our site. This
+helps us to provide you with a good experience when you browse our site and
+also allows us to improve our site. For detailed information on the cookies
+we use and the purposes for which we use them see our
+[cookie statement](cookies.qmd).
+
+## Changes to this policy {#sec-privacy-changes}
+
+This policy may be changed from time to time. In that case, the ‘modified’
+date at the top of this page will also change. Any changes to this privacy
+policy will apply to you and your data immediately.
+
+## Contact
+
+If you wish to raise any queries or concerns about this privacy policy please
+contact us at [comms@bsg.ox.ac.uk](mailto:comms@bsg.ox.ac.uk) or
+Blavatnik School of Government, University of Oxford,
+Radcliffe Observatory Quarter, Woodstock Road, Oxford OX2 6GG, United Kingdom.

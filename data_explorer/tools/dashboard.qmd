@@ -1,0 +1,514 @@
+---
+pagetitle: "Index 2024 Results dashboard | The InCiSE Project"
+
+format:
+  html:
+    toc: false
+
+execute:
+  echo: false
+---
+
+:::{.column-screen .data-title}
+:::{.column-screen-inset}
+# Index 2024 Results dashboard
+:::
+:::
+
+
+```{ojs, setup}
+//| output: false
+
+d3 = import("https://cdn.jsdelivr.net/npm/d3@7.9.0/+esm");
+Plot = import("https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.14/+esm");
+import { aq, op } from "https://cdn.jsdelivr.net/npm/arquero@5.4.0/+esm"
+
+/* source data*/
+radar_data = await d3.csv("https://raw.githubusercontent.com/incise-project/incise2019-dashboard/main/data/radar_data.csv", d3.autoType);
+radar_grid = await d3.csv("https://raw.githubusercontent.com/incise-project/incise2019-dashboard/main/data/radar_grid.csv", d3.autoType);
+radar_axes = await d3.csv("https://raw.githubusercontent.com/incise-project/incise2019-dashboard/main/data/radar_axes.csv", d3.autoType);
+output_table = await d3.csv("https://raw.githubusercontent.com/incise-project/incise2019-dashboard/main/data/incise2019_full_output.csv", d3.autoType);
+narrative_data = await d3.csv("https://raw.githubusercontent.com/incise-project/incise2019-dashboard/main/data/country_narratives.csv", d3.autoType);
+
+/* country selectors */
+country_codes =  [
+  "AUS", "AUT", "BEL", "BGR", "CAN", "CHL", "HRV", "CZE", "DNK", "EST", "FIN",
+  "FRA", "DEU", "GRC", "HUN", "ISL", "IRL", "ISR", "ITA", "JPN", "LVA", "LTU",
+  "MEX", "NLD", "NZL", "NOR", "POL", "PRT", "ROU", "SVK", "SVN", "KOR", "ESP",
+  "SWE", "CHE", "TUR", "GBR", "USA"
+];
+
+countries = [
+  "Australia", "Austria", "Belgium", "Bulgaria", "Canada", "Chile", "Croatia",
+  "Czechia", "Denmark", "Estonia", "Finland", "France", "Germany", "Greece",
+  "Hungary", "Iceland", "Ireland", "Israel", "Italy", "Japan", "Latvia",
+  "Lithuania", "Mexico", "Netherlands", "New Zealand", "Norway", "Poland",
+  "Portugal", "Romania",  "Slovakia",  "Slovenia", "South Korea", "Spain",
+  "Sweden", "Switzerland", "Turkey", "United Kingdom",
+  "United States of America"
+];
+
+/* country selectors */
+bar_vars =  [
+  "incise_index", "ind_cap", "ind_crm", "ind_dig", "ind_ffm", "ind_hrm",
+  "ind_inc", "ind_int", "ind_opn", "ind_pol", "ind_pro", "ind_reg", "ind_tax"
+];
+
+radar_groups =  [
+  "0_indicators", "cap", "crm", "dig", "ffm", "hrm", "inc", "int", "opn",
+  "pol", "pro", "reg", "tax"
+];
+
+indicators = [
+  "InCiSE Index", "Capabilities", "Crisis and risk management",
+  "Digital services", "Fiscal and financial management", "HR management",
+  "Inclusiveness", "Integrity", "Openness", "Policy making", "Procurement",
+  "Regulation", "Tax administration"
+];
+
+/* methodology pages */
+method_pages = [
+  "https://incise-project.github.io/incise2019-techreport/02_index.html",
+  "https://incise-project.github.io/incise2019-techreport/03_03_capabilities.html",
+  "https://incise-project.github.io/incise2019-techreport/03_08_crisis_risk.html",
+  "https://incise-project.github.io/incise2019-techreport/03_12_digital.html",
+  "https://incise-project.github.io/incise2019-techreport/03_06_fiscal_financial.html",
+  "https://incise-project.github.io/incise2019-techreport/03_10_hrm.html",
+  "https://incise-project.github.io/incise2019-techreport/03_04_inclusiveness.html",
+  "https://incise-project.github.io/incise2019-techreport/03_01_integrity.html",
+  "https://incise-project.github.io/incise2019-techreport/03_02_openness.html",
+  "https://incise-project.github.io/incise2019-techreport/03_05_policy_making.html",
+  "https://incise-project.github.io/incise2019-techreport/03_09_procurement.html",
+  "https://incise-project.github.io/incise2019-techreport/03_07_regulation.html",
+  "https://incise-project.github.io/incise2019-techreport/03_11_tax.html"
+];
+
+method_labels = [
+  "calculation of the InCiSE Index",
+  "source data and calculation of the Capabilities indicator",
+  "source data and calculation of the Crisis and risk management indicator",
+  "source data and calculation of the Digital services indicator",
+  "source data and calculation of the Fiscal and financial management indicator",
+  "source data and calculation of the HR management indicator",
+  "source data and calculation of the Inclusiveness indicator",
+  "source data and calculation of the Integrity indicator",
+  "source data and calculation of the Openness indicator",
+  "source data and calculation of the Policy making indicator",
+  "source data and calculation of the Procurement indicator",
+  "source data and calculation of the Regulation indicator",
+  "source data and calculation of the Tax administration indicator"
+];
+
+
+bar_data = radar_data.filter(function(df) {
+  return my_bar == df.metric;
+});
+
+incise_bar = bar_data.filter(function(df) {
+  return "InCiSE" == df.cc_iso3c;
+});
+
+country_bar = bar_data.filter(function(df) {
+  return my_country == df.cc_iso3c;
+});
+
+incise_radar = radar_data.filter(function(df) {
+  return my_radar == df.group && "InCiSE" == df.cc_iso3c;
+});
+
+country_radar = radar_data.filter(function(df) {
+  return my_radar == df.group && my_country == df.cc_iso3c;
+});
+
+country_points = country_radar.filter(function(df) {
+  return df.value != null
+});
+
+country_imputed = country_radar.filter(function(df) {
+  return df.imputed != null
+});
+
+my_grid = radar_grid.filter(function(df) {
+  return my_radar == df.group
+});
+
+my_axes = radar_axes.filter(function(df) {
+  return my_radar == df.group
+});
+
+my_narrative = narrative_data.filter(function(df){
+  return my_country == df.cc_iso3c
+})[0];
+
+country_table = output_table.filter(function(df) {
+  return  my_country == df.cc_iso3c && (my_radar == df.group || my_bar == df.metric)
+});
+
+set_val = function(input, value) {
+  input.value = value;
+  input.dispatchEvent(new Event("input"))
+};
+
+bar_plot.addEventListener("mousedown", (event) => {
+  if (bar_plot.value != null) {
+    if (bar_plot.value.cc_iso3c == "InCiSE") {
+      return null
+    }
+    var sel_country = countries[country_codes.indexOf(bar_plot.value.cc_iso3c)]
+    set_val(viewof usr_country, sel_country)
+  }
+});
+
+set_val(viewof usr_country, countries[Math.floor(Math.random()*38)])
+
+my_bar = bar_vars[indicators.indexOf(usr_indicator)];
+my_radar = radar_groups[indicators.indexOf(usr_indicator)];
+my_country = country_codes[countries.indexOf(usr_country)];
+my_method = method_pages[indicators.indexOf(usr_indicator)];
+
+```
+
+:::{.column-screen-inset .dashboard}
+
+:::{.grid}
+
+:::{.g-col-12 .g-col-xl-3}
+
+:::{.select-country}
+```{ojs}
+viewof usr_country = Inputs.select(
+  countries,
+  {label: "Select a country:", unique: true}
+);
+```
+:::
+
+:::{.select-indicator}
+``` {ojs}
+viewof usr_indicator = Inputs.select(
+  indicators,
+  {label: "Select an indicator:", unique: true}
+);
+```
+:::
+
+:::{.country-narrative}
+``` {ojs}
+html`<p class="lead">${my_narrative.lead_text}</p>`
+```
+:::
+
+:::
+
+:::{.g-col-12 .g-col-xl-9}
+
+:::{.panel-tabset}
+
+## Chart
+
+```{ojs}
+html`<strong>${usr_country}: ${usr_indicator}</strong>`
+```
+
+:::{.grid}
+
+:::{.g-col-12 .g-col-lg-4}
+
+```{ojs}
+
+bar_plot = Plot.plot({
+  width: 300,
+  height: 600,
+  marginLeft: 75,
+  style: {fontSize: 13},
+  x: {label: null, grid: true, domain: [0, 1.4]},
+  y: {label: null},
+  marks: [
+    Plot.barX(bar_data, {
+      x: "raw_value",
+      y: "cc_iso3c",
+      sort: {y: "x", reverse: true},
+      fill: "#dddddd"
+    }),
+    Plot.barX(incise_bar, {
+      x: "raw_value",
+      y: "cc_iso3c",
+      sort: {y: "x", reverse: true},
+      fill: "#C4622D"
+    }),
+    Plot.barX(country_bar, {
+      x: "raw_value",
+      y: "cc_iso3c",
+      sort: {y: "x", reverse: true},
+      fill: "#00629B"
+    }),
+    Plot.text(incise_bar, {
+      x: (d) => d.value + 0.05,
+      y: "cc_iso3c",
+      text: "data_label",
+      fill: "#C4622D",
+      fontWeight: "600",
+      textAnchor: "start",
+      sort: {y: "x", reverse: true}
+    }),
+    Plot.text(country_bar, {
+      x: (d) => d.value + 0.05,
+      y: "cc_iso3c",
+      text: "data_label",
+      fill: "#00629B",
+      fontWeight: "600",
+      textAnchor: "start",
+      sort: {y: "x", reverse: true}
+    }),
+    Plot.tip(bar_data,
+      Plot.pointerY({
+        x: "raw_value",
+        y: "cc_iso3c",
+        filter: (d) => d.hover_label,
+        title: (d) => d.hover_label,
+        frameAnchor: "left"
+      })
+    )
+  ]
+});
+
+
+```
+:::
+
+:::{.g-col-12 .g-col-lg-8}
+:::{.d-none .d-md-block}
+```{ojs}
+chart_curve = "catmull-rom-closed"
+
+radar_plot = Plot.plot({
+  width: 600,
+  height: 600,
+  style: {fontSize: 13},
+  x: {domain: [-1.5, 1.5], label: "", axis: null},
+  y: {domain: [-1.5, 1.5], label: "", axis: null},
+  marks: [
+    Plot.line(my_grid, {
+      x: "radar_x",
+      y: "radar_y",
+      z: "value",
+      stroke: "#dddddd",
+      curve: chart_curve
+    }),
+    Plot.link(my_axes, {
+      x1: 0,
+      y1: 0,
+      x2: "axis_x",
+      y2: "axis_y",
+      z: "metric",
+      stroke: "#dddddd",
+      curve: "linear"
+    }),
+    Plot.line(incise_radar, {
+      x: "radar_x",
+      y: "radar_y",
+      stroke: "#C4622D",
+      strokeWidth: 2,
+      curve: chart_curve
+    }),
+    Plot.dot(incise_radar, {
+      x: "radar_x",
+      y: "radar_y",
+      fill: "#C4622D",
+      symbol: "circle-stroke",
+      strokeWidth: 2
+    }),
+    Plot.line(country_radar, {
+      x: "radar_x",
+      y: "radar_y",
+      stroke: "#00629B",
+      strokeWidth: 2,
+      curve: chart_curve
+    }),
+    Plot.dot(country_points, {
+      x: "radar_x",
+      y: "radar_y",
+      radius: 3,
+      fill: "#00629B",
+      stroke: "#00629B",
+      symbol: "circle-stroke",
+      strokeWidth: 2
+    }),
+    Plot.dot(country_imputed, {
+      x: "radar_x",
+      y: "radar_y",
+      radius: 3,
+      stroke: "#00629B",
+      fill: "#ffffff",
+      symbol: "circle-stroke",
+      strokeWidth: 2
+    }),
+    Plot.text(my_axes, {
+      x: "label_x",
+      y: "label_y",
+      text: "label",
+      lineWidth: 15
+    }),
+    Plot.tip(country_radar,
+      Plot.pointer({
+        x: "radar_x",
+        y: "radar_y",
+        filter: (d) => d.hover_label,
+        title: (d) => d.hover_label
+      })
+    )
+  ]
+});
+
+
+```
+:::
+
+:::{.d-md-none}
+```{ojs}
+
+mobile_plot = Plot.plot({
+  width: 400,
+  height: 600,
+  marginLeft: 200,
+  style: {fontSize: 13},
+  x: {label: null, grid: true, domain: [0, 1]},
+  y: {axis: null},
+  marks: [
+    Plot.ruleY(incise_radar, {
+      y: "label",
+      stroke: "#eeeeee",
+      strokeWidth: 10
+    }),
+    Plot.text(incise_radar, {
+      x: "value",
+      y: "label",
+      fill: "#C4622D",
+      text: (d) => "\u2503",
+      fontSize: 16,
+      fontWeight: 800
+    }),
+    Plot.dot(country_radar, {
+      x: "value",
+      y: "label",
+      radius: 2,
+      fill: "#00629B",
+      stroke: "#00629B",
+      symbol: "circle-stroke",
+      strokeWidth: 2
+    }),
+    Plot.dot(country_radar, {
+      x: "imputed",
+      y: "label",
+      radius: 2,
+      stroke: "#00629B",
+      fill: "#ffffff",
+      symbol: "circle-stroke",
+      strokeWidth: 2
+    }),
+    Plot.text(country_radar, {
+      x: -0.05,
+      y: "label",
+      text: "label",
+      frameAnchor: "right",
+      lineWidth: 15
+    }),
+    Plot.tip(country_radar,
+      Plot.pointer({
+        x: "raw_value",
+        y: "label",
+        filter: (d) => d.hover_label,
+        title: (d) => d.hover_label,
+        frameAnchor: "left"
+      })
+    )
+  ]
+});
+
+
+```
+:::
+
+:::
+
+:::
+
+## Table
+
+```{ojs}
+html`<strong>${usr_country}: ${usr_indicator}</strong>`
+```
+
+```{ojs}
+
+Inputs.table(country_table, {
+  columns: ["cc_iso3c", "label", "value", "imputed", "incise_average"],
+  header: {
+    cc_iso3c: "Country",
+    label: "Metric",
+    value: "Country score",
+    imputed: "Imputed",
+    incise_average: "InCiSE average"
+  },
+  sort: "sort_order",
+  rows: 20
+})
+
+```
+
+```{ojs}
+
+html`
+  <div style="margin-top:1.5rem">
+  <p>
+    Full details of the methodology for the 2019 InCiSE Index are available
+    in the
+    <a href="http://incise-project.github.io/incise2019-techreport/">
+      Technical Report</a>, specific details about the
+      ${method_labels[indicators.indexOf(usr_indicator)]}
+    can be found <a href="${my_method}">here</a>.
+  </p>
+  </div>
+`
+
+```
+
+## Help
+
+:::{.help}
+
+This dashboard accompanies the InCiSE 2019
+[Results Report](https://incise-project.github.io/incise2019-results/) and 
+[Technical Report](https://incise-project.github.io/incise2019-techreport/)
+and provides an interactive tool for exploring the full results of the InCiSE
+Index and its constituent Indicators.
+
+### How to use the dashboard
+
+The dashboard provide a "chart" and "data" view for the selected country and
+indicator. In the chart view you will see two charts, a bar chart showing the
+selected country's score for the InCiSE Index or the selected Indicator, and
+a radar chart showing the scores of the components that make up the Index or
+Indicator score. The selected country's score is shown in blue, and the InCiSE
+average is shown in orange. When viewing on a mobile the radar chart is
+rendered as a dot plot where each Indicator/metric is shown on a separate line.
+
+When you first load (or refresh the page) the dashboard it will select a
+country random. You can change the country selection by either using the
+dropdown menu at the top of the page or by selecting the country's bar in the
+bar chart.
+
+On first load the dashboard will show the results for the InCiSE Index, use the
+drop-down menu to select an Indicator to show the overall results for that
+Indicator and the scores of the metrics that contribute to the Indicator.
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+

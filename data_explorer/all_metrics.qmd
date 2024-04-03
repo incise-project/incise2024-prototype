@@ -1,0 +1,41 @@
+---
+title: "All metrics"
+
+format:
+  html:
+    page-layout: full
+    toc: false
+    anchor-sections: false
+    title-block-banner: true
+    grid:
+      sidebar-width: 0px
+
+listing:
+  id: "all-metrics-listing"
+  contents: metrics
+  type: grid
+  categories: true
+  sort:
+    - "date desc"
+    - "title desc"
+  date-format: "DD-MMM-YYYY"
+  sort-ui: true
+  filter-ui: true
+  grid-item-border: false
+  fields: [title, subtitle, categories]
+
+page-navigation: false
+
+execute: 
+  echo: false
+---
+
+:::{.metric-listing}
+
+Data for all metrics in the Index
+
+:::{#all-metrics-listing}
+:::
+
+:::
+

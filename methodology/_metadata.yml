@@ -1,0 +1,11 @@
+sidebar: sb-methodlogy
+
+citation:
+  type: article-journal
+  container-title: "Index: Methodology"
+  url: "https://index.bsg.ox.ac.uk/methodology"
+
+format:
+  html:
+    css: methodology.css
+    title-block-banner: true

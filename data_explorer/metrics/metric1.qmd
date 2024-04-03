@@ -1,0 +1,341 @@
+---
+title: "Metric 1"
+subtitle: |
+  Metric 1 description
+categories:
+  - example
+  - "domain 1"
+  - "theme 1"
+  - "source a"
+
+citation:
+  type: article-journal
+  container-title: Index
+  url: "https://index.bsg.ox.ac.uk"
+
+appendix-cite-as: display
+
+format:
+  html:
+    toc: false
+    title-block-banner: true
+
+execute: 
+  echo: false
+---
+
+```{ojs}
+Plot = import("https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.14/+esm");
+topojson = require('topojson-client@3')
+
+world = await d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json");
+countries = topojson.feature(world, world.objects.countries)
+
+dummy_data = [
+  {cc_iso3c: "CC001", cc_iso3n: "414", cc_name:   "Country 1", metric_value: 0.650, raw_value:  0.750, country_group: "Global Index"},
+  {cc_iso3c: "CC002", cc_iso3n: "162", cc_name:   "Country 2", metric_value: 0.869, raw_value:  1.838, country_group: "Global Index"},
+  {cc_iso3c: "CC003", cc_iso3n: "364", cc_name:   "Country 3", metric_value: 0.050, raw_value: -2.241, country_group: "Global Index"},
+  {cc_iso3c: "CC004", cc_iso3n: "748", cc_name:   "Country 4", metric_value: null,  raw_value: -1.669, country_group: "Other countries"},
+  {cc_iso3c: "CC005", cc_iso3n: "417", cc_name:   "Country 5", metric_value: 0.938, raw_value:  2.181, country_group: "Global Index"},
+  {cc_iso3c: "CC006", cc_iso3n: "591", cc_name:   "Country 6", metric_value: null,  raw_value: -2.274, country_group: "Other countries"},
+  {cc_iso3c: "CC007", cc_iso3n: "100", cc_name:   "Country 7", metric_value: 0.265, raw_value: -1.170, country_group: "Global Index"},
+  {cc_iso3c: "CC008", cc_iso3n:   "8", cc_name:   "Country 8", metric_value: 0.122, raw_value: -1.880, country_group: "Global Index"},
+  {cc_iso3c: "CC009", cc_iso3n: "660", cc_name:   "Country 9", metric_value: 0.226, raw_value: -1.362, country_group: "Global Index"},
+  {cc_iso3c: "CC010", cc_iso3n: "702", cc_name:  "Country 10", metric_value: null,  raw_value:  2.489, country_group: "Other countries"},
+  {cc_iso3c: "CC011", cc_iso3n: "666", cc_name:  "Country 11", metric_value: 0.449, raw_value: -0.251, country_group: "Global Index"},
+  {cc_iso3c: "CC012", cc_iso3n:   "4", cc_name:  "Country 12", metric_value: null,  raw_value: -2.488, country_group: "Other countries"},
+  {cc_iso3c: "CC013", cc_iso3n: "678", cc_name:  "Country 13", metric_value: 0.158, raw_value: -1.701, country_group: "Global Index"},
+  {cc_iso3c: "CC014", cc_iso3n: "300", cc_name:  "Country 14", metric_value: 0.869, raw_value:  1.838, country_group: "Global Index"},
+  {cc_iso3c: "CC015", cc_iso3n: "688", cc_name:  "Country 15", metric_value: 0.107, raw_value: -1.953, country_group: "Global Index"},
+  {cc_iso3c: "CC016", cc_iso3n: "508", cc_name:  "Country 16", metric_value: 0.711, raw_value:  1.052, country_group: "Global Index"},
+  {cc_iso3c: "CC017", cc_iso3n: "705", cc_name:  "Country 17", metric_value: 0.490, raw_value: -0.049, country_group: "Global Index"},
+  {cc_iso3c: "CC018", cc_iso3n:  "31", cc_name:  "Country 18", metric_value: 0.249, raw_value: -1.248, country_group: "Global Index"},
+  {cc_iso3c: "CC019", cc_iso3n: "724", cc_name:  "Country 19", metric_value: 0.551, raw_value:  0.253, country_group: "Global Index"},
+  {cc_iso3c: "CC020", cc_iso3n: "710", cc_name:  "Country 20", metric_value: 0.418, raw_value: -0.408, country_group: "In-depth Index"},
+  {cc_iso3c: "CC021", cc_iso3n: "426", cc_name:  "Country 21", metric_value: 0.508, raw_value:  0.043, country_group: "Global Index"},
+  {cc_iso3c: "CC022", cc_iso3n:  "40", cc_name:  "Country 22", metric_value: null,  raw_value:  0.810, country_group: "Other countries"},
+  {cc_iso3c: "CC023", cc_iso3n: "554", cc_name:  "Country 23", metric_value: null,  raw_value: -1.325, country_group: "Other countries"},
+  {cc_iso3c: "CC024", cc_iso3n: "574", cc_name:  "Country 24", metric_value: 0.761, raw_value:  1.301, country_group: "Global Index"},
+  {cc_iso3c: "CC025", cc_iso3n: "512", cc_name:  "Country 25", metric_value: null,  raw_value: -0.050, country_group: "Other countries"},
+  {cc_iso3c: "CC026", cc_iso3n: "288", cc_name:  "Country 26", metric_value: 0.181, raw_value: -1.589, country_group: "In-depth Index"},
+  {cc_iso3c: "CC027", cc_iso3n: "232", cc_name:  "Country 27", metric_value: null,  raw_value:  0.908, country_group: "Other countries"},
+  {cc_iso3c: "CC028", cc_iso3n: "795", cc_name:  "Country 28", metric_value: 0.540, raw_value:  0.202, country_group: "In-depth Index"},
+  {cc_iso3c: "CC029", cc_iso3n:  "86", cc_name:  "Country 29", metric_value: 0.736, raw_value:  1.177, country_group: "Global Index"},
+  {cc_iso3c: "CC030", cc_iso3n: "380", cc_name:  "Country 30", metric_value: 0.113, raw_value: -1.923, country_group: "Global Index"},
+  {cc_iso3c: "CC031", cc_iso3n: "218", cc_name:  "Country 31", metric_value: 0.187, raw_value: -1.556, country_group: "In-depth Index"},
+  {cc_iso3c: "CC032", cc_iso3n: "760", cc_name:  "Country 32", metric_value: 0.067, raw_value: -2.153, country_group: "Global Index"},
+  {cc_iso3c: "CC033", cc_iso3n: "876", cc_name:  "Country 33", metric_value: 0.480, raw_value: -0.098, country_group: "Global Index"},
+  {cc_iso3c: "CC034", cc_iso3n: "643", cc_name:  "Country 34", metric_value: 0.617, raw_value:  0.583, country_group: "Global Index"},
+  {cc_iso3c: "CC035", cc_iso3n: "418", cc_name:  "Country 35", metric_value: 0.279, raw_value: -1.100, country_group: "In-depth Index"},
+  {cc_iso3c: "CC036", cc_iso3n: "304", cc_name:  "Country 36", metric_value: null,  raw_value:  2.071, country_group: "Other countries"},
+  {cc_iso3c: "CC037", cc_iso3n: "598", cc_name:  "Country 37", metric_value: 0.561, raw_value:  0.304, country_group: "In-depth Index"},
+  {cc_iso3c: "CC038", cc_iso3n: "208", cc_name:  "Country 38", metric_value: null,  raw_value:  1.459, country_group: "Other countries"},
+  {cc_iso3c: "CC039", cc_iso3n: "336", cc_name:  "Country 39", metric_value: 0.403, raw_value: -0.480, country_group: "Global Index"},
+  {cc_iso3c: "CC040", cc_iso3n: "772", cc_name:  "Country 40", metric_value: 0.580, raw_value:  0.398, country_group: "Global Index"},
+  {cc_iso3c: "CC041", cc_iso3n: "170", cc_name:  "Country 41", metric_value: 0.000, raw_value: -2.446, country_group: "Global Index"},
+  {cc_iso3c: "CC042", cc_iso3n: "832", cc_name:  "Country 42", metric_value: 0.317, raw_value: -0.911, country_group: "Global Index"},
+  {cc_iso3c: "CC043", cc_iso3n: "531", cc_name:  "Country 43", metric_value: 0.712, raw_value:  1.056, country_group: "In-depth Index"},
+  {cc_iso3c: "CC044", cc_iso3n: "174", cc_name:  "Country 44", metric_value: 0.842, raw_value:  1.702, country_group: "In-depth Index"},
+  {cc_iso3c: "CC045", cc_iso3n: "800", cc_name:  "Country 45", metric_value: 0.965, raw_value:  2.315, country_group: "Global Index"},
+  {cc_iso3c: "CC046", cc_iso3n: "231", cc_name:  "Country 46", metric_value: 0.925, raw_value:  2.118, country_group: "In-depth Index"},
+  {cc_iso3c: "CC047", cc_iso3n: "498", cc_name:  "Country 47", metric_value: null,  raw_value: -2.460, country_group: "Other countries"},
+  {cc_iso3c: "CC048", cc_iso3n: "203", cc_name:  "Country 48", metric_value: 0.217, raw_value: -1.408, country_group: "Global Index"},
+  {cc_iso3c: "CC049", cc_iso3n: "663", cc_name:  "Country 49", metric_value: 0.139, raw_value: -1.797, country_group: "Global Index"},
+  {cc_iso3c: "CC050", cc_iso3n:  "96", cc_name:  "Country 50", metric_value: 0.319, raw_value: -0.901, country_group: "Global Index"},
+  {cc_iso3c: "CC051", cc_iso3n: "580", cc_name:  "Country 51", metric_value: 0.264, raw_value: -1.175, country_group: "In-depth Index"},
+  {cc_iso3c: "CC052", cc_iso3n: "238", cc_name:  "Country 52", metric_value: null,  raw_value:  0.346, country_group: "Other countries"},
+  {cc_iso3c: "CC053", cc_iso3n:  "28", cc_name:  "Country 53", metric_value: 0.994, raw_value:  2.461, country_group: "Global Index"},
+  {cc_iso3c: "CC054", cc_iso3n: "136", cc_name:  "Country 54", metric_value: 0.812, raw_value:  1.555, country_group: "In-depth Index"},
+  {cc_iso3c: "CC055", cc_iso3n: "840", cc_name:  "Country 55", metric_value: 0.269, raw_value: -1.148, country_group: "In-depth Index"},
+  {cc_iso3c: "CC056", cc_iso3n: "260", cc_name:  "Country 56", metric_value: 0.296, raw_value: -1.013, country_group: "Global Index"},
+  {cc_iso3c: "CC057", cc_iso3n: "352", cc_name:  "Country 57", metric_value: 0.647, raw_value:  0.731, country_group: "Global Index"},
+  {cc_iso3c: "CC058", cc_iso3n: "276", cc_name:  "Country 58", metric_value: 0.483, raw_value: -0.084, country_group: "Global Index"},
+  {cc_iso3c: "CC059", cc_iso3n: "360", cc_name:  "Country 59", metric_value: null,  raw_value:  1.811, country_group: "Other countries"},
+  {cc_iso3c: "CC060", cc_iso3n: "474", cc_name:  "Country 60", metric_value: 0.905, raw_value:  2.016, country_group: "In-depth Index"},
+  {cc_iso3c: "CC061", cc_iso3n: "652", cc_name:  "Country 61", metric_value: null,  raw_value:  0.349, country_group: "Other countries"},
+  {cc_iso3c: "CC062", cc_iso3n: "882", cc_name:  "Country 62", metric_value: 0.841, raw_value:  1.699, country_group: "Global Index"},
+  {cc_iso3c: "CC063", cc_iso3n:  "68", cc_name:  "Country 63", metric_value: null,  raw_value:  0.271, country_group: "Other countries"},
+  {cc_iso3c: "CC064", cc_iso3n: "434", cc_name:  "Country 64", metric_value: null,  raw_value: -0.628, country_group: "Other countries"},
+  {cc_iso3c: "CC065", cc_iso3n: "320", cc_name:  "Country 65", metric_value: null,  raw_value:  0.473, country_group: "Other countries"},
+  {cc_iso3c: "CC066", cc_iso3n: "442", cc_name:  "Country 66", metric_value: null,  raw_value: -1.106, country_group: "Other countries"},
+  {cc_iso3c: "CC067", cc_iso3n: "484", cc_name:  "Country 67", metric_value: 0.996, raw_value:  2.471, country_group: "Global Index"},
+  {cc_iso3c: "CC068", cc_iso3n: "566", cc_name:  "Country 68", metric_value: 0.560, raw_value:  0.298, country_group: "Global Index"},
+  {cc_iso3c: "CC069", cc_iso3n: "116", cc_name:  "Country 69", metric_value: 0.732, raw_value:  1.156, country_group: "Global Index"},
+  {cc_iso3c: "CC070", cc_iso3n: "804", cc_name:  "Country 70", metric_value: 0.985, raw_value:  2.417, country_group: "Global Index"},
+  {cc_iso3c: "CC071", cc_iso3n: "430", cc_name:  "Country 71", metric_value: 0.834, raw_value:  1.665, country_group: "In-depth Index"},
+  {cc_iso3c: "CC072", cc_iso3n: "268", cc_name:  "Country 72", metric_value: null,  raw_value:  1.410, country_group: "Other countries"},
+  {cc_iso3c: "CC073", cc_iso3n: "764", cc_name:  "Country 73", metric_value: null,  raw_value:  2.384, country_group: "Other countries"},
+  {cc_iso3c: "CC074", cc_iso3n:  "64", cc_name:  "Country 74", metric_value: 0.629, raw_value:  0.644, country_group: "In-depth Index"},
+  {cc_iso3c: "CC075", cc_iso3n: "368", cc_name:  "Country 75", metric_value: 0.115, raw_value: -1.916, country_group: "Global Index"},
+  {cc_iso3c: "CC076", cc_iso3n: "784", cc_name:  "Country 76", metric_value: 0.355, raw_value: -0.720, country_group: "Global Index"},
+  {cc_iso3c: "CC077", cc_iso3n: "356", cc_name:  "Country 77", metric_value: 0.042, raw_value: -2.279, country_group: "Global Index"},
+  {cc_iso3c: "CC078", cc_iso3n:  "48", cc_name:  "Country 78", metric_value: 0.420, raw_value: -0.396, country_group: "Global Index"},
+  {cc_iso3c: "CC079", cc_iso3n: "108", cc_name:  "Country 79", metric_value: 0.658, raw_value:  0.788, country_group: "Global Index"},
+  {cc_iso3c: "CC080", cc_iso3n: "422", cc_name:  "Country 80", metric_value: 0.889, raw_value:  1.939, country_group: "Global Index"},
+  {cc_iso3c: "CC081", cc_iso3n: "242", cc_name:  "Country 81", metric_value: 0.259, raw_value: -1.196, country_group: "Global Index"},
+  {cc_iso3c: "CC082", cc_iso3n: "612", cc_name:  "Country 82", metric_value: 0.897, raw_value:  1.977, country_group: "In-depth Index"},
+  {cc_iso3c: "CC083", cc_iso3n: "690", cc_name:  "Country 83", metric_value: 0.362, raw_value: -0.688, country_group: "Global Index"},
+  {cc_iso3c: "CC084", cc_iso3n: "694", cc_name:  "Country 84", metric_value: 0.330, raw_value: -0.847, country_group: "In-depth Index"},
+  {cc_iso3c: "CC085", cc_iso3n: "887", cc_name:  "Country 85", metric_value: 0.258, raw_value: -1.201, country_group: "Global Index"},
+  {cc_iso3c: "CC086", cc_iso3n: "254", cc_name:  "Country 86", metric_value: 0.454, raw_value: -0.226, country_group: "Global Index"},
+  {cc_iso3c: "CC087", cc_iso3n: "756", cc_name:  "Country 87", metric_value: null,  raw_value: -0.717, country_group: "Other countries"},
+  {cc_iso3c: "CC088", cc_iso3n: "438", cc_name:  "Country 88", metric_value: 0.226, raw_value: -1.365, country_group: "Global Index"},
+  {cc_iso3c: "CC089", cc_iso3n: "826", cc_name:  "Country 89", metric_value: 0.110, raw_value: -1.938, country_group: "In-depth Index"},
+  {cc_iso3c: "CC090", cc_iso3n: "334", cc_name:  "Country 90", metric_value: null,  raw_value: -1.427, country_group: "Other countries"},
+  {cc_iso3c: "CC091", cc_iso3n: "600", cc_name:  "Country 91", metric_value: 0.485, raw_value: -0.072, country_group: "Global Index"},
+  {cc_iso3c: "CC092", cc_iso3n: "706", cc_name:  "Country 92", metric_value: 0.862, raw_value:  1.802, country_group: "Global Index"},
+  {cc_iso3c: "CC093", cc_iso3n: "608", cc_name:  "Country 93", metric_value: 0.909, raw_value:  2.040, country_group: "In-depth Index"},
+  {cc_iso3c: "CC094", cc_iso3n: "581", cc_name:  "Country 94", metric_value: 1.000, raw_value:  2.491, country_group: "In-depth Index"},
+  {cc_iso3c: "CC095", cc_iso3n: "854", cc_name:  "Country 95", metric_value: 0.544, raw_value:  0.220, country_group: "Global Index"},
+  {cc_iso3c: "CC096", cc_iso3n:  "51", cc_name:  "Country 96", metric_value: 0.046, raw_value: -2.259, country_group: "In-depth Index"},
+  {cc_iso3c: "CC097", cc_iso3n: "246", cc_name:  "Country 97", metric_value: 0.871, raw_value:  1.850, country_group: "In-depth Index"},
+  {cc_iso3c: "CC098", cc_iso3n: "728", cc_name:  "Country 98", metric_value: null,  raw_value: -2.243, country_group: "Other countries"},
+  {cc_iso3c: "CC099", cc_iso3n: "604", cc_name:  "Country 99", metric_value: 0.462, raw_value: -0.188, country_group: "Global Index"},
+  {cc_iso3c: "CC100", cc_iso3n: "780", cc_name: "Country 100", metric_value: 0.254, raw_value: -1.225, country_group: "Global Index"}
+]
+
+metric_data = dummy_data.filter(function(df){
+      return df.metric_value != null
+});
+
+metric_map = new Map(dummy_data.map(d => [d.cc_iso3n, d.metric_value]));
+raw_map = new Map(dummy_data.map(d => [d.cc_iso3n, d.raw_value]));
+
+bar_chart = function() {
+  if (select_raw) {
+    return Plot.plot({
+      width: 1000,
+      height: 500,
+      marginBottom: 40,
+      marginRight: 0,
+      x: {label: null},
+      y: {label: "Value", grid: true, axis: "left", nice: true},
+      color: {
+        domain: ["In-depth Index", "Global Index", "Other countries"],
+        range: ["#00629B", "#41B6E6", "#cccccc"],
+        legend: true
+      },
+      marks: [
+        Plot.axisX({
+          anchor: "bottom", tickRotate: 270, tickSize: 0, textAnchor: "end"
+        }),
+        Plot.barY(dummy_data, {
+          x: "cc_iso3c",
+          y: "raw_value",
+          fill: "country_group",
+          stroke: "#ffffff",
+          sort: {x: "y", reverse: true}
+        }),
+        Plot.ruleY([0]),
+        Plot.axisX({
+          anchor: "bottom", tickRotate: 270, tickSize: 0, textAnchor: "end"
+        }),
+        Plot.tip(dummy_data,
+          Plot.pointerX({
+            x: "cc_iso3c",
+            y: "raw_value",
+            filter: (d) => d.cc_iso3c,
+            title: (d) => 
+              `${d.cc_iso3c}: ${d.raw_value}`,
+            frameAnchor: "left"
+          })
+        )
+      ]
+    })
+  } else {
+    return Plot.plot({
+      width: 1000,
+      height: 500,
+      marginBottom: 40,
+      marginRight: 0,
+      x: {label: null},
+      y: {label: "Value", grid: true, axis: "left", nice: true},
+      color: {
+        domain: ["In-depth Index", "Global Index"],
+        range: ["#00629B", "#41B6E6"],
+        legend: true
+      },
+      marks: [
+        Plot.barY(metric_data, {
+          x: "cc_iso3c",
+          y: "metric_value",
+          fill: "country_group",
+          stroke: "#ffffff",
+          sort: {x: "y", reverse: true}
+        }),
+        Plot.ruleY([0]),
+        Plot.axisX({
+          anchor: "bottom", tickRotate: 270, tickSize: 0, textAnchor: "end"
+        }),
+        Plot.tip(metric_data,
+          Plot.pointerX({
+            x: "cc_iso3c",
+            y: "metric_value",
+            filter: (d) => d.cc_iso3c,
+            title: (d) => 
+              `${d.cc_iso3c}: ${d.metric_value}`,
+            frameAnchor: "left"
+          })
+        )
+      ]
+    })
+  }
+};
+
+map_chart = function(selection){
+  if (selection) {
+    return Plot.plot({
+      projection: "equal-earth",
+      width: 1000,
+      height: 500,
+      color: {scheme: "YlGnBu", unknown: "#f3f3f3", label: "Metric 1 (raw)", legend: true},
+      marks: [
+        Plot.geo(countries, {
+          fill: d => raw_map.get(d.id),
+          stroke: "#dddddd"
+        })
+      ]
+    })
+  } else {
+    return Plot.plot({
+      projection: "equal-earth",
+      width: 1000,
+      height: 500,
+      color: {scheme: "YlGnBu", unknown: "#f3f3f3", label: "Metric 1", legend: true},
+      marks: [
+        Plot.geo(countries, {
+          fill: d => metric_map.get(d.id),
+          stroke: "#dddddd"
+        })
+      ]
+    })
+  }
+};
+
+```
+
+:::{.column-screen .metric-visual}
+
+:::{.column-page-inset}
+
+:::{.panel-tabset}
+## Chart
+
+```{ojs}
+bar_chart(select_raw)
+```
+
+## Map
+```{ojs}
+map_chart(select_raw)
+```
+
+## Table
+```{ojs}
+Inputs.table(dummy_data, {
+  rows: 20
+})
+```
+:::
+
+:::{.plot-controls}
+```{ojs}
+viewof select_raw = Inputs.toggle({label: "Show source data in chart/map view"});
+```
+:::
+
+:::
+
+:::
+
+
+:::{.metric-info}
+
+## What you should know about this data
+
+Suscipit lorem arcu magna mauris amet tincidunt aenean aliquet risus eros
+ullamcorper lacus. Nulla ut eu lectus et nec, proin. Himenaeos sed augue metus
+in, luctus. Elit vel venenatis et ligula ante ullamcorper dui rutrum. Turpis vel
+sed auctor natoque quam, aliquet. Risus mollis at tortor risus torquent turpis
+dis libero, at. Habitant, vel et ad ac non faucibus nullam leo et. Ultricies sed
+taciti non praesent cum ut semper nascetur. Natoque, consectetur euismod cursus
+non efficitur, in, sed libero sed odio praesent. Vitae eleifend, nibh tincidunt
+convallis sed amet sit. Dictum eros non, vel morbi. Et in, vel fusce vehicula
+nostra quis interdum pretium. Accumsan vehicula pellentesque fusce in in ut id
+cursus congue aliquet.
+
+:::
+
+:::{.source-processing}
+
+## Source data & processing
+
+Metadata | Value
+--- | ---
+Source | Institution
+Last update | DD-MMM-YYYY
+Retrieved | DD-MMM-YYYY
+Retrieved from | [https://www.example.com](https://www.example.com)
+Citation | Author (Date) Dataset, url
+Dataset URL | [https://www.example.com](https://www.example.com)
+Procesing script | [https://www.example.com](https://www.example.com)
+
+### Original data
+
+Magnis ut sed quis tellus, viverra, vel porta in cubilia luctus. Convallis
+fermentum nunc dapibus urna. Ut nulla pretium sed et. Consectetur montes viverra
+porta amet curae mollis euismod sit accumsan. Integer egestas nisi porttitor,
+congue nulla pretium ligula, consectetur maecenas nulla rutrum sed. Est libero
+in, mattis habitant ut arcu, litora proin fames. Eleifend laoreet, turpis
+egestas. Cras quisque risus tempor accumsan, eget, sapien congue dui.
+
+### How we have processed this data
+
+In eros a tempus ornare ornare mauris. Sed aliquam a curabitur nullam mattis.
+Nulla, sagittis ut dictum in. Fringilla donec in nostra nulla eget rutrum sem.
+Magna primis, lobortis tortor id ex vitae sem. Dictum ac tristique dui phasellus
+eget vel tempor, magna id ut et dis. Nibh dui, sed dui in. Nam eget dictumst
+turpis curabitur vitae in eu ullamcorper a at malesuada. Nunc elementum aenean
+sociis, sit non.
+
+:::

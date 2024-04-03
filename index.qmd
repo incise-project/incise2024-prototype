@@ -1,0 +1,240 @@
+---
+listing:
+  id: "latest-listing"
+  contents: content/posts
+  type: grid
+  categories: false
+  sort:
+    - "date desc"
+    - "title desc"
+  fields: [image, title, subtitle, author, date]
+  date-format: "DD-MMM-YYYY"
+  sort-ui: false
+  filter-ui: false
+  grid-item-border: false
+  max-items: 6
+  grid-columns: 3
+  
+page-navigation: false
+
+format:
+  html:
+    pagetitle: "The International Civil Service Effectiveness (InCiSE) Project"
+    toc: false
+    css: sitehome.css
+    anchor-sections: false
+    grid: 
+      sidebar-width: 0px
+      margin-width: 0px
+      body-width: 1000px
+
+execute: 
+  echo: false
+---
+
+:::{.site-title-block}
+:::{.column-screen .site-title}
+:::{.column-page-inset}
+# The International Civil Service Effectiveness Project
+:::
+:::
+:::
+
+:::{.column-screen .headline-results}
+:::{.column-page-inset}
+## The 2024 Index results
+
+:::{.grid}
+:::{.g-col-12 .g-col-md-3 .results-chart}
+```{ojs}
+
+Plot = import("https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.14/+esm");
+
+dummy_data = [
+  {cc_iso3c: "CC001", cc_name: "Country 1", value: 1.000, hover_label: "1.000", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC002", cc_name: "Country 2", value: 0.990, hover_label: "0.990", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC003", cc_name: "Country 3", value: 0.980, hover_label: "0.980", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC004", cc_name: "Country 4", value: 0.970, hover_label: "0.970", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC005", cc_name: "Country 5", value: 0.960, hover_label: "0.960", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC006", cc_name: "Country 6", value: 0.949, hover_label: "0.949", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC007", cc_name: "Country 7", value: 0.939, hover_label: "0.939", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC008", cc_name: "Country 8", value: 0.929, hover_label: "0.929", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC009", cc_name: "Country 9", value: 0.919, hover_label: "0.919", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC010", cc_name: "Country 10", value: 0.909, hover_label: "0.909", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC011", cc_name: "Country 11", value: 0.899, hover_label: "0.899", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC012", cc_name: "Country 12", value: 0.889, hover_label: "0.889", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC013", cc_name: "Country 13", value: 0.879, hover_label: "0.879", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC014", cc_name: "Country 14", value: 0.869, hover_label: "0.869", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC015", cc_name: "Country 15", value: 0.859, hover_label: "0.859", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC016", cc_name: "Country 16", value: 0.848, hover_label: "0.848", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC017", cc_name: "Country 17", value: 0.838, hover_label: "0.838", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC018", cc_name: "Country 18", value: 0.828, hover_label: "0.828", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC019", cc_name: "Country 19", value: 0.818, hover_label: "0.818", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC020", cc_name: "Country 20", value: 0.808, hover_label: "0.808", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC021", cc_name: "Country 21", value: 0.798, hover_label: "0.798", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC022", cc_name: "Country 22", value: 0.788, hover_label: "0.788", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC023", cc_name: "Country 23", value: 0.778, hover_label: "0.778", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC024", cc_name: "Country 24", value: 0.768, hover_label: "0.768", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC025", cc_name: "Country 25", value: 0.758, hover_label: "0.758", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC026", cc_name: "Country 26", value: 0.747, hover_label: "0.747", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC027", cc_name: "Country 27", value: 0.737, hover_label: "0.737", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC028", cc_name: "Country 28", value: 0.727, hover_label: "0.727", colour_group: "All countries"},
+  {cc_iso3c: "CC029", cc_name: "Country 29", value: 0.717, hover_label: "0.717", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC030", cc_name: "Country 30", value: 0.707, hover_label: "0.707", colour_group: "All countries"},
+  {cc_iso3c: "CC031", cc_name: "Country 31", value: 0.697, hover_label: "0.697", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC032", cc_name: "Country 32", value: 0.687, hover_label: "0.687", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC033", cc_name: "Country 33", value: 0.677, hover_label: "0.677", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC034", cc_name: "Country 34", value: 0.667, hover_label: "0.667", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC035", cc_name: "Country 35", value: 0.657, hover_label: "0.657", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC036", cc_name: "Country 36", value: 0.646, hover_label: "0.646", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC037", cc_name: "Country 37", value: 0.636, hover_label: "0.636", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC038", cc_name: "Country 38", value: 0.626, hover_label: "0.626", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC039", cc_name: "Country 39", value: 0.616, hover_label: "0.616", colour_group: "All countries"},
+  {cc_iso3c: "CC040", cc_name: "Country 40", value: 0.606, hover_label: "0.606", colour_group: "All countries"},
+  {cc_iso3c: "CC041", cc_name: "Country 41", value: 0.596, hover_label: "0.596", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC042", cc_name: "Country 42", value: 0.586, hover_label: "0.586", colour_group: "All countries"},
+  {cc_iso3c: "CC043", cc_name: "Country 43", value: 0.576, hover_label: "0.576", colour_group: "All countries"},
+  {cc_iso3c: "CC044", cc_name: "Country 44", value: 0.566, hover_label: "0.566", colour_group: "All countries"},
+  {cc_iso3c: "CC045", cc_name: "Country 45", value: 0.556, hover_label: "0.556", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC046", cc_name: "Country 46", value: 0.545, hover_label: "0.545", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC047", cc_name: "Country 47", value: 0.535, hover_label: "0.535", colour_group: "All countries"},
+  {cc_iso3c: "CC048", cc_name: "Country 48", value: 0.525, hover_label: "0.525", colour_group: "All countries"},
+  {cc_iso3c: "CC049", cc_name: "Country 49", value: 0.515, hover_label: "0.515", colour_group: "In-depth Index"},
+  {cc_iso3c: "CC050", cc_name: "Country 50", value: 0.505, hover_label: "0.505", colour_group: "All countries"},
+  {cc_iso3c: "CC051", cc_name: "Country 51", value: 0.495, hover_label: "0.495", colour_group: "All countries"},
+  {cc_iso3c: "CC052", cc_name: "Country 52", value: 0.485, hover_label: "0.485", colour_group: "All countries"},
+  {cc_iso3c: "CC053", cc_name: "Country 53", value: 0.475, hover_label: "0.475", colour_group: "All countries"},
+  {cc_iso3c: "CC054", cc_name: "Country 54", value: 0.465, hover_label: "0.465", colour_group: "All countries"},
+  {cc_iso3c: "CC055", cc_name: "Country 55", value: 0.455, hover_label: "0.455", colour_group: "All countries"},
+  {cc_iso3c: "CC056", cc_name: "Country 56", value: 0.444, hover_label: "0.444", colour_group: "All countries"},
+  {cc_iso3c: "CC057", cc_name: "Country 57", value: 0.434, hover_label: "0.434", colour_group: "All countries"},
+  {cc_iso3c: "CC058", cc_name: "Country 58", value: 0.424, hover_label: "0.424", colour_group: "All countries"},
+  {cc_iso3c: "CC059", cc_name: "Country 59", value: 0.414, hover_label: "0.414", colour_group: "All countries"},
+  {cc_iso3c: "CC060", cc_name: "Country 60", value: 0.404, hover_label: "0.404", colour_group: "All countries"},
+  {cc_iso3c: "CC061", cc_name: "Country 61", value: 0.394, hover_label: "0.394", colour_group: "All countries"},
+  {cc_iso3c: "CC062", cc_name: "Country 62", value: 0.384, hover_label: "0.384", colour_group: "All countries"},
+  {cc_iso3c: "CC063", cc_name: "Country 63", value: 0.374, hover_label: "0.374", colour_group: "All countries"},
+  {cc_iso3c: "CC064", cc_name: "Country 64", value: 0.364, hover_label: "0.364", colour_group: "All countries"},
+  {cc_iso3c: "CC065", cc_name: "Country 65", value: 0.354, hover_label: "0.354", colour_group: "All countries"},
+  {cc_iso3c: "CC066", cc_name: "Country 66", value: 0.343, hover_label: "0.343", colour_group: "All countries"},
+  {cc_iso3c: "CC067", cc_name: "Country 67", value: 0.333, hover_label: "0.333", colour_group: "All countries"},
+  {cc_iso3c: "CC068", cc_name: "Country 68", value: 0.323, hover_label: "0.323", colour_group: "All countries"},
+  {cc_iso3c: "CC069", cc_name: "Country 69", value: 0.313, hover_label: "0.313", colour_group: "All countries"},
+  {cc_iso3c: "CC070", cc_name: "Country 70", value: 0.303, hover_label: "0.303", colour_group: "All countries"},
+  {cc_iso3c: "CC071", cc_name: "Country 71", value: 0.293, hover_label: "0.293", colour_group: "All countries"},
+  {cc_iso3c: "CC072", cc_name: "Country 72", value: 0.283, hover_label: "0.283", colour_group: "All countries"},
+  {cc_iso3c: "CC073", cc_name: "Country 73", value: 0.273, hover_label: "0.273", colour_group: "All countries"},
+  {cc_iso3c: "CC074", cc_name: "Country 74", value: 0.263, hover_label: "0.263", colour_group: "All countries"},
+  {cc_iso3c: "CC075", cc_name: "Country 75", value: 0.253, hover_label: "0.253", colour_group: "All countries"},
+  {cc_iso3c: "CC076", cc_name: "Country 76", value: 0.242, hover_label: "0.242", colour_group: "All countries"},
+  {cc_iso3c: "CC077", cc_name: "Country 77", value: 0.232, hover_label: "0.232", colour_group: "All countries"},
+  {cc_iso3c: "CC078", cc_name: "Country 78", value: 0.222, hover_label: "0.222", colour_group: "All countries"},
+  {cc_iso3c: "CC079", cc_name: "Country 79", value: 0.212, hover_label: "0.212", colour_group: "All countries"},
+  {cc_iso3c: "CC080", cc_name: "Country 80", value: 0.202, hover_label: "0.202", colour_group: "All countries"},
+  {cc_iso3c: "CC081", cc_name: "Country 81", value: 0.192, hover_label: "0.192", colour_group: "All countries"},
+  {cc_iso3c: "CC082", cc_name: "Country 82", value: 0.182, hover_label: "0.182", colour_group: "All countries"},
+  {cc_iso3c: "CC083", cc_name: "Country 83", value: 0.172, hover_label: "0.172", colour_group: "All countries"},
+  {cc_iso3c: "CC084", cc_name: "Country 84", value: 0.162, hover_label: "0.162", colour_group: "All countries"},
+  {cc_iso3c: "CC085", cc_name: "Country 85", value: 0.152, hover_label: "0.152", colour_group: "All countries"},
+  {cc_iso3c: "CC086", cc_name: "Country 86", value: 0.141, hover_label: "0.141", colour_group: "All countries"},
+  {cc_iso3c: "CC087", cc_name: "Country 87", value: 0.131, hover_label: "0.131", colour_group: "All countries"},
+  {cc_iso3c: "CC088", cc_name: "Country 88", value: 0.121, hover_label: "0.121", colour_group: "All countries"},
+  {cc_iso3c: "CC089", cc_name: "Country 89", value: 0.111, hover_label: "0.111", colour_group: "All countries"},
+  {cc_iso3c: "CC090", cc_name: "Country 90", value: 0.101, hover_label: "0.101", colour_group: "All countries"},
+  {cc_iso3c: "CC091", cc_name: "Country 91", value: 0.091, hover_label: "0.091", colour_group: "All countries"},
+  {cc_iso3c: "CC092", cc_name: "Country 92", value: 0.081, hover_label: "0.081", colour_group: "All countries"},
+  {cc_iso3c: "CC093", cc_name: "Country 93", value: 0.071, hover_label: "0.071", colour_group: "All countries"},
+  {cc_iso3c: "CC094", cc_name: "Country 94", value: 0.061, hover_label: "0.061", colour_group: "All countries"},
+  {cc_iso3c: "CC095", cc_name: "Country 95", value: 0.051, hover_label: "0.051", colour_group: "All countries"},
+  {cc_iso3c: "CC096", cc_name: "Country 96", value: 0.040, hover_label: "0.040", colour_group: "All countries"},
+  {cc_iso3c: "CC097", cc_name: "Country 97", value: 0.030, hover_label: "0.030", colour_group: "All countries"},
+  {cc_iso3c: "CC098", cc_name: "Country 98", value: 0.020, hover_label: "0.020", colour_group: "All countries"},
+  {cc_iso3c: "CC099", cc_name: "Country 99", value: 0.010, hover_label: "0.010", colour_group: "All countries"},
+  {cc_iso3c: "CC100", cc_name: "Country 100", value: 0.000, hover_label: "0.000", colour_group: "All countries"}
+]
+
+Plot.plot({
+  width: 200,
+  height: 3000,
+  marginTop: 0,
+  marginBottom: 0,
+  marginLeft: 0,
+  marginRight: 0,
+  x: {label: null, grid: null, domain: [-0.1, 1], ticks: 0},
+  y: {label: null, axis: null},
+  color: {
+    domain: ["In-depth Index", "All countries"],
+    range: ["#002147", "#003b69"],
+    legend: false
+  },
+  marks: [
+    Plot.barX(dummy_data, {
+      x: "value",
+      y: "cc_iso3c",
+      fill: "colour_group",
+      sort: {y: "x", reverse: true}
+    }),
+    Plot.text(dummy_data, {
+      y: "cc_iso3c",
+      x: 0.05,
+      text: "cc_name",
+      fill: "#ffffff",
+      textAnchor: "start",
+      sort: {x: "y", reverse: true}
+    }),
+  ]
+})
+
+```
+:::
+:::{.g-col-12 .g-col-md-5 .headline-text}
+Country A tops the 2024 edition of the Index
+[Find out where your country ranks](results_2024/index.qmd){.fom-link}
+:::
+:::{.g-col-12 .g-col-md-4 .headline-links}
+- [View the results](results_2024/index.qmd)
+- [Read insights and interviews](content/index.qmd)
+- [Explore the data](data_explorer/index.qmd)
+- [Understand the methodology](methodology/index.qmd)
+:::
+:::
+
+:::
+:::
+
+:::{.column-screen .about-site}
+:::{.column-page-inset}
+## About the Index
+
+:::{.lead}
+The Index provides comparative benchmarking data on the activities and
+performance of civil services around the world.
+:::
+
+The Index is a benchmarking and peer learning project based at the
+[Blavatnik School of Governemnt](https://www.bsg.ox.ac.uk) that aims to help
+senior officials, those leading reform efforts and those who hold civil
+service leaders to account.
+
+Using its measurement framework, the Index brings together X individual data
+points from Y sources measuring XX countries in-depth and YY in total.
+Alongside the overall Index results, through this website you can: read
+articles discussing themes and countries covered in the results and interviews
+with those leading reform efforts, explore the data in-depth, and read the
+technical methodology.
+:::
+:::
+
+:::{.column-page-inset}
+:::{.latest-content}
+## Latest insights
+
+:::{.article-listing}
+:::{#latest-listing}
+:::
+:::
+
+[More opinion, insight and research](content/index.qmd){.fom-link}
+
+:::
+:::

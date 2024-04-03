@@ -1,0 +1,63 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/content/posts/20240228-test8.html",
+      "/content/posts/20240228-test6.html",
+      "/content/posts/20240228-test7.html",
+      "/content/posts/20240228-test5.html",
+      "/content/posts/20240228-test4.html",
+      "/content/posts/20240228-test3.html",
+      "/content/posts/20240228-test2.html",
+      "/content/posts/20240228-test.html"
+    ]
+  },
+  {
+    "listing": "/data_explorer/all_metrics.html",
+    "items": [
+      "/data_explorer/metrics/metric3.html",
+      "/data_explorer/metrics/metric2.html",
+      "/data_explorer/metrics/metric1.html"
+    ]
+  },
+  {
+    "listing": "/data_explorer/domain1.html",
+    "items": [
+      "/data_explorer/metrics/metric3.html",
+      "/data_explorer/metrics/metric1.html"
+    ]
+  },
+  {
+    "listing": "/methodology/index.html",
+    "items": [
+      "/methodology/framework.html",
+      "/methodology/data_processing.html"
+    ]
+  },
+  {
+    "listing": "/content/index.html",
+    "items": [
+      "/content/posts/20240228-test8.html",
+      "/content/posts/20240228-test6.html",
+      "/content/posts/20240228-test7.html",
+      "/content/posts/20240228-test5.html",
+      "/content/posts/20240228-test4.html",
+      "/content/posts/20240228-test3.html",
+      "/content/posts/20240228-test2.html",
+      "/content/posts/20240228-test.html"
+    ]
+  },
+  {
+    "listing": "/results_2024/index.html",
+    "items": [
+      "/content/posts/20240228-test8.html",
+      "/content/posts/20240228-test6.html",
+      "/content/posts/20240228-test7.html",
+      "/content/posts/20240228-test5.html",
+      "/content/posts/20240228-test4.html",
+      "/content/posts/20240228-test3.html",
+      "/content/posts/20240228-test2.html",
+      "/content/posts/20240228-test.html"
+    ]
+  }
+]

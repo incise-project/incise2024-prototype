@@ -1,0 +1,24 @@
+/*-- css specific for homepage styling --*/
+
+.navbar-title {
+  display: none !important;
+}
+
+.headline-results {
+  font-family: "Brandon Text", "Josefin Sans", "Open Sans", "Lato", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.observablehq svg text {
+  font-family: "Brandon Text", "Josefin Sans", "Open Sans", "Lato", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.headline-results svg g[aria-label="tip"] {
+  color: var(--bs-body-color);
+}
+
+.results-chart {
+  height: 400px;
+  overflow: scroll;
+}

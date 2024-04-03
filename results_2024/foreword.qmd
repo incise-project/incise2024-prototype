@@ -1,0 +1,95 @@
+---
+title: "Foreword"
+subtitle: |
+  Reflections and remarks on the 2024 Index results from A N Other and Y T Other
+order: 1
+
+citation:
+  type: webpage
+  title: "Index 2024: Foreword"
+  author:
+    - "AN Other"
+    - "YA Other"
+  issued: 2024
+  url: "https://index.bsg.ox.ac.uk"
+
+format:
+  html:
+    toc: true
+
+execute: 
+  echo: false
+---
+
+Lorem ipsum dolor sit amet, donec donec magnis condimentum. Et est at vel mi
+non sed id. Nisl torquent sed faucibus arcu amet. Nibh, praesent nam tortor
+nullam consectetur dolor. Nisl taciti faucibus leo himenaeos varius et rutrum
+nibh ut. Dignissim laoreet, quis libero interdum eu diam non. Eu elit ornare
+justo maximus platea. Imperdiet ac fringilla pretium nulla et sodales metus.
+Enim posuere lobortis nibh phasellus non sed potenti neque.
+
+:::{.column-body-outset-right}
+## Foreword by A N Other
+
+:::{.grid}
+:::{.g-col-12 .g-col-md-8}
+Vehicula phasellus nec ligula euismod luctus in. Lacinia et est scelerisque
+lobortis sed non eros ex tristique sapien eget neque. Turpis, taciti sit
+potenti porta. Nulla lacus torquent massa, fringilla. Nam magnis aptent ipsum
+vel nascetur commodo, amet? Sed a vehicula iaculis sociis aenean fusce quam
+justo ut dui augue. Nunc dolor mattis. Scelerisque finibus consequat convallis
+neque iaculis lacus id, leo. Malesuada efficitur et viverra magna amet turpis
+nec ut. Per nullam vestibulum mauris tincidunt eleifend habitant donec a, id.
+Quisque commodo ante sed, in litora.
+
+Eleifend sapien porttitor leo tellus, bibendum nibh pretium himenaeos
+molestie nec bibendum odio. Dui nunc natoque nulla suscipit risus risus quis
+luctus. Tincidunt magna, erat in, porttitor amet fames at. Neque, condimentum
+elementum amet, magna morbi vel donec amet ac elementum porta metus ex
+lobortis facilisis. Phasellus quam ipsum proin posuere vel, ut proin,
+ultricies curae! Maecenas urna id libero ante integer maximus eu taciti,
+velit vitae. In augue ultrices, leo morbi hendrerit habitant mauris vitae eu
+augue. Curabitur parturient et donec laoreet ac. Tortor pharetra non in commodo
+sem. Eleifend, a convallis quis ut sodales eros accumsan, justo mauris
+ridiculus amet. Vel mus senectus elementum sit adipiscing in.
+:::
+:::{.g-col-12 .g-col-md-4}
+![](../imgs/person_black_48dp.svg){.draft-image}
+
+A N Other is Job title at Institution
+:::
+:::
+:::
+
+:::{.column-body-outset-right}
+## Foreword by Y T Other
+
+:::{.grid}
+:::{.g-col-12 .g-col-md-8}
+Primis proin nisi id a in erat, mi. Himenaeos volutpat, aliquet tellus tellus?
+Taciti non non congue vel mauris sit aenean ad. Sociis enim vestibulum
+tristique primis sed in neque dapibus tempor mattis. In taciti posuere nibh
+vitae venenatis dolor, sagittis, sit a dui, sed. Risus fermentum, luctus orci
+eu pharetra. Sit amet nisl, feugiat magna. Erat commodo interdum nunc eget ac
+posuere libero est. Potenti nisi euismod tempor est sed sed, volutpat elit
+viverra. Praesent etiam montes lacinia hendrerit a et varius. Sed vitae nulla
+vestibulum, vitae risus sed nec magnis.
+
+Hac mus sed nisi turpis, turpis ac, eleifend cubilia phasellus viverra mi.
+Et mauris class eros a magna mi ante nisl. Inceptos porta, leo cras malesuada
+at, efficitur aenean nullam aenean. Dis congue penatibus sed, ultrices netus
+lacus donec ac vitae volutpat. Dapibus diam faucibus risus sagittis, senectus
+viverra, varius vulputate molestie penatibus taciti pellentesque at. Vel
+blandit nulla viverra augue cursus penatibus turpis potenti ac. Vel suspendisse
+purus donec et eu, integer primis dictumst vehicula. Dignissim, rutrum morbi
+molestie elementum dis ligula efficitur. Imperdiet fermentum magna nostra morbi
+magna eget sed in. Ultrices ligula sed commodo in. Accumsan orci massa ut, sed
+class odio sociosqu ac consequat purus fringilla.
+:::
+:::{.g-col-12 .g-col-md-4}
+![](../imgs/person_black_48dp.svg){.draft-image}
+
+Y T Other is Job title at Institution
+:::
+:::
+:::

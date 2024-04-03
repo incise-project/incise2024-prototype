@@ -1,0 +1,124 @@
+---
+title: "Our Index's data"
+subtitle: "Explore the results from the Index and the data behind it"
+
+format:
+  html:
+    toc: false
+    anchor-sections: false
+    title-block-banner: true
+    grid:
+      sidebar-width: 0px
+      margin-width: 0px
+
+sidebar: false
+page-navigation: false
+
+execute: 
+  echo: false
+---
+
+:::{.column-page .data-home}
+:::{.grid}
+
+:::{.g-col-12 .g-col-md-6}
+## Interactive tools
+
+Our interactive tools help you to understand the Index results for your country.
+
+### Index dashboard
+
+:::{.draft-image}
+Image
+:::
+
+Use the dashboard to review your country's overall scores for the Index and
+its components.
+
+[Go to the dashboard](tools/dashboard.qmd){.fom-link}
+
+### Country comparisons
+
+:::{.draft-image}
+Image
+:::
+
+Use the country comparisons tool to explore how you compare to other countries.
+
+[Look at comparisons](tools/dashboard.qmd){.fom-link}
+
+### Briefing builder
+
+:::{.draft-image}
+Preview
+
+Image
+:::
+
+Use our briefing builder to quickly pull out key highlights for briefing
+senior officials.
+
+[Create my own briefing](tools/dashboard.qmd){.fom-link}
+
+:::
+
+:::{.g-col-12 .g-col-md-6}
+## Data by theme
+The Index collates XX metrics from YY data sources, use our navigator to
+explore our metrics and the underlying source data in more detail.
+
+:::{.grid}
+
+:::{.g-col-12 .g-col-sm-6 .align-center}
+[Domain 1 data](domain1.qmd){.fom-link}
+:::
+
+:::{.g-col-12 .g-col-sm-6 .align-center}
+[Domain 2 data](domain1.qmd){.fom-link}
+:::
+
+:::
+
+:::{.grid}
+
+:::{.g-col-12 .g-col-sm-6 .align-center}
+[Domain 3 data](domain1.qmd){.fom-link}
+:::
+
+:::{.g-col-12 .g-col-sm-6 .align-center}
+[Domain 4 data](domain1.qmd){.fom-link}
+:::
+
+:::
+
+:::{.grid}
+
+:::{.d-none .d-md-block .g-col-sm-3}
+:::
+
+:::{.g-col-12 .g-col-sm-6 .align-center}
+[Data for all domains](all_metrics.qmd){.fom-link}
+:::
+
+:::{.d-none .d-md-block .g-col-sm-3}
+:::
+
+:::
+
+## In-depth
+
+Want to go even further with our data, all of our data is available to
+download as is the code we use to calculate the Index and publish this
+website, you can also read the methodology behind the Index and read our
+guide on how to make best use of the data.
+
+[Download data and code](){.fom-link}
+
+[Read our methodology](/methodology/index.qmd){.fom-link}
+
+["How to" guide](user-guide.qmd){.fom-link}
+
+:::
+
+:::
+:::

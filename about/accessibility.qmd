@@ -1,0 +1,17 @@
+---
+title: "Accessibility statement"
+subtitle: |
+  The University of Oxford is committed to providing an accessible web presence
+  that gives members of the public and members of the University community full
+  access to University information, courses and activities offered publicly
+  through the website.
+order: 3
+
+page-navigation: false
+
+format:
+  html:
+    toc: true
+---
+
+Holding page for an accessibility statement.

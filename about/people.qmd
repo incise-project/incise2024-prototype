@@ -1,0 +1,19 @@
+---
+title: "People"
+subtitle: |
+  The core team, our collaborators and other people involved in delivering the
+  project.
+
+page-navigation: false
+
+format:
+  html:
+    toc: true
+
+order: 2
+
+execute: 
+  echo: false
+---
+
+Holding page for team details.

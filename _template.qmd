@@ -1,0 +1,32 @@
+---
+title: "Page/article title"
+subtitle: |
+  Page/article subtitle
+image: "path/to/preview/img.png"
+image-alt: "Alt text for the image"
+date: "YYYY-MM-DD"
+author: "A N OTHER"
+categories:
+  - draft
+  - example
+
+format:
+  html:
+    toc: true
+
+execute: 
+  echo: false
+---
+
+Page/article content goes here.
+
+## L2 heading
+
+More content.
+
+### L3 heading
+
+More content, don't go beyond an L3 heading.
+
+Use double **asterisks** to denote bold text. Lighter emphasis is also
+available using single *asterisks* but should be avoided.

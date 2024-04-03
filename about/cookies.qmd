@@ -1,0 +1,92 @@
+---
+title: "Cookie statement"
+subtitle: |
+  How we use cookies on this website.
+date: 2024-03-15
+date-modified: 2024-03-15
+order: 5
+
+tbl-colwidths: [25,50,25]
+
+page-navigation: false
+
+format:
+  html:
+    toc: true
+---
+
+This website uses "cookies". A cookie is a small file of letters and numbers
+that we place on your computer or mobile device if you agree. These cookies
+allow us to distinguish you from other users of our website, which helps us to
+provide you with a good experience when you browse our website and enables us
+to improve our website. For information about what types of personal
+information will be gathered when you visit the website, and how this
+information will be used, please see our [privacy policy](privacy.qmd).
+
+```{=html}
+<p>
+You can check or change your preferences at any time, there is a link to
+the <a href="#" data-cc="show-preferencesModal">cookie settings</a> at the
+bottom of every page on this website.
+</p>
+```
+
+## Types of cookies we use
+
+We use two types of cookies:
+
+- **essential cookies**: the website cannot function properly without these
+  cookies. If you wish, you can disable cookies completely in your browser
+  preferences.
+- **analytics cookies**: we use these cookies to better understand how you
+  interact with our website. This helps us prioritize our work, improve our
+  navigation and search, and demonstrate the reach of our work.
+
+Most web browsers allow some control of most cookies through the browser
+settings. To find out more about cookies, including how to see what cookies
+have been set and how to manage and delete them please visit
+[https://www.allaboutcookies.org/](https://www.allaboutcookies.org/).
+
+## Specific cookies we use
+
+Cookies may be set either by this website ("first party cookies"), or by a
+third party website ("third party cookies"). The tables below identifies the
+cookies we use and explains the purposes for which they are used.
+
+However, we continue to collect information about third-party cookies and the
+tables below are based on the work completed to date. Accordingly, we may
+update the information contained in this section from time to time.
+Additionally, some cookies may be set from time to time by feeds or content
+from third party websites that we make available on our sites.
+
+### First party cookies
+
+Name | Purpose | Expiry
+--- | --- | ---
+cc_cookie | Saves your cookie preferences | 30 days
+
+### Google Analytics
+
+We use Google Analytics to track and analyse how people use this website.
+
+Google Analytics is a web analytics service offered by Google. Google uses the
+data collected to track and monitor the use of this website This data is shared
+with other Google services. Google may use the collected data to contextualise
+and personalise the ads of its own advertising network.
+
+For more information on the privacy practices of Google, please visit the
+Google Privacy Terms web page: [https://policies.google.com/privacy?hl=en](https://policies.google.com/privacy?hl=en). We also encourage you to review
+Google’s policy for safeguarding your data: [https://support.google.com/analytics/answer/6004245](https://support.google.com/analytics/answer/6004245).
+
+The table below shows details of the Google Analytics cookies we use:
+
+Name | Purpose | Expiry
+--- | --- | ---
+\_ga\_\<wip\> | These cookies set a unique visitor ID that helps us to understand how many people visit this website and how they use it. | 2 years
+
+
+## Changes to this statement
+
+This statement may be changed from time to time. In that case, the ‘modified’
+date at the top of this page will also change. Any changes to this cookie
+statement will apply to you and your data immediately.

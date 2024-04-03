@@ -1,0 +1,8 @@
+sidebar: sb-about
+
+page-navigation: false
+
+format:
+  html:
+    css: about.css
+    title-block-banner: true

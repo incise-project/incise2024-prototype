@@ -1,0 +1,79 @@
+project:
+  type: website
+
+website:
+  title: "International Civil Service Effectiveness (InCiSE) Project"
+  page-navigation: true
+  navbar:
+    logo: imgs/bsg-logo.svg
+    logo-alt: "Blavatnik School of Government logo"
+    title: "The International Civil Service Effectiveness (InCiSE) Project"
+    right:
+      - text: "2024 Results"
+        href: "results_2024/index.qmd"
+      - text: "Insights"
+        href: "content/index.qmd"
+      - text: "Data"
+        menu:
+          - text: "Our data"
+            href: "data_explorer/index.qmd"
+          - text: "Results dashboard"
+            href: "data_explorer/tools/dashboard.qmd"
+          - text: "---"
+          - text: "Data by theme"
+          - text: "Domain 1"
+            href: "data_explorer/domain1.qmd"
+          - text: "Domain 2"
+            href: "data_explorer/domain1.qmd"
+          - text: "Domain 3"
+            href: "data_explorer/domain1.qmd"
+          - text: "Domain 4"
+            href: "data_explorer/domain1.qmd"
+          - text: "All data"
+            href: "data_explorer/all_metrics.qmd"
+          - text: "---"
+          - text: "In-depth"
+          - text: "Download data"
+            href: "data_explorer/index.qmd"
+          - text: "Methodology"
+            href: "methodology/index.qmd"
+          - text: "How to use guide"
+            href: "data_explorer/user_guide.qmd"
+      - text: "About"
+        menu:
+          - text: "About the project"
+            href: "about/index.qmd"
+          - text: "Contact us"
+            href: "about/contact.qmd"
+          - text: "Our people"
+            href: "about/people.qmd"
+          - text: "The Blavatnik School of Government"
+            href: "https://www.bsg.ox.ac.uk"
+  sidebar:
+    - id: sb-results
+      title: "results"
+      style: "floating"
+      contents: results_2024
+    - id: sb-methodology
+      title: "Technical methodology"
+      style: "floating"
+      contents: methodology
+    - id: sb-about
+      title: "About the project"
+      style: "floating"
+      contents: about
+
+csl: ejpr.csl
+
+format:
+  html:
+    theme: [bsg.scss]
+    css: bsg.css
+    toc: true
+    include-in-header: "_head.html"
+    include-after-body: "_footer.html"
+    date-format: "DD MMM YYYY"
+    pagetitle: "{{< meta title >}} | The InCiSE Project"
+
+execute:
+  freeze: true
