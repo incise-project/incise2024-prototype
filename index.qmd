@@ -19,7 +19,7 @@ page-navigation: false
 
 format:
   html:
-    pagetitle: "The International Civil Service Effectiveness (InCiSE) Project"
+    pagetitle: "The Blavatnik Index of Public Administration"
     toc: false
     css: sitehome.css
     anchor-sections: false
@@ -35,7 +35,7 @@ execute:
 :::{.site-title-block}
 :::{.column-screen .site-title}
 :::{.column-page-inset}
-# The International Civil Service Effectiveness Project
+# The Blavatnik Index of Public Administration
 :::
 :::
 :::

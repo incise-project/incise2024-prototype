@@ -2,12 +2,12 @@ project:
   type: website
 
 website:
-  title: "International Civil Service Effectiveness (InCiSE) Project"
+  title: "Blavatnik Index of Public Administration"
   page-navigation: true
   navbar:
     logo: imgs/bsg-logo.svg
     logo-alt: "Blavatnik School of Government logo"
-    title: "The International Civil Service Effectiveness (InCiSE) Project"
+    title: "The Blavatnik Index of Public Adminsitration"
     right:
       - text: "2024 Results"
         href: "results_2024/index.qmd"
@@ -67,13 +67,15 @@ csl: ejpr.csl
 
 format:
   html:
-    theme: [bsg.scss]
+    theme:
+      - none
+      - bsg.scss
     css: bsg.css
     toc: true
     include-in-header: "_head.html"
     include-after-body: "_footer.html"
     date-format: "DD MMM YYYY"
-    pagetitle: "{{< meta title >}} | The InCiSE Project"
+    pagetitle: "{{< meta title >}} | The Blavatnik Index of Public Administration"
 
 execute:
   freeze: true
