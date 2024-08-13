@@ -50,6 +50,7 @@ em {
 
 h1, h2, h3, h4 {
   font-weight: 400;
+  color: $bsg-dark-blue;
 }
 
 main {
@@ -91,6 +92,14 @@ main a:hover {
     text-transform: uppercase;
   }
 
+}
+
+.quarto-title-banner h1, 
+.quarto-title-banner .h1,
+.quarto-title-banner h2, 
+.quarto-title-banner .h2 {
+  font-weight: 400;
+  color: $bsg-dark-blue;
 }
 
 #title-block-header {
@@ -187,6 +196,27 @@ nav.navbar .dropdown-item:hover, .dropdown-item:focus {
 .navbar .dropdown-header {
   color: $bsg-warm-grey6;
   font-weight: 500;
+}
+
+/*-- breadcrumb themeing --*/
+
+.quarto-title-breadcrumbs .breadcrumb {
+  margin-bottom: 1rem;
+}
+
+.breadcrumb-item a {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: $bsg-warm-grey6;
+}
+
+.quarto-title-breadcrumbs .breadcrumb li:last-of-type a {
+  color: $bsg-warm-grey6;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  color: $bsg-warm-grey6;
+  font-weight: 300;
 }
 
 /*-- footer themeing --*/
