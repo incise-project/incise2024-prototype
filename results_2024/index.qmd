@@ -35,7 +35,7 @@ execute:
 :::{.site-title-block .headline-results}
 :::{.column-screen}
 :::{.column-page-inset}
-# Country A tops the 2024 edition of the Index {.headline-text}
+# Country A tops the 2024 edition of the Blavatnik Index of Public Administration {.headline-text}
 
 :::{.grid}
 :::{.g-col-12 .g-col-md-3 .fom-link}
@@ -60,8 +60,9 @@ execute:
 :::{.column-page-inset}
 
 :::{.headline-quote .align-left}
-At this crucial time for public administration, the Index provides useful
-insights for governments across the world.
+After an unprecedented year with elections in over 100 countries, the Blavatnik
+Index of Public Administration provides crucial insights for officials and
+ministers.
 
 :::{.headline-author}
 A N Other, Job title, Institution
@@ -90,11 +91,13 @@ Y T Other, Job title, Institution
 ## Executive summary
 
 :::{.lead}
-The 2024 Index covers XX countries in depth and YY countries in total.
+The 2024 Blavatnik Index of Public Administration covers 129 countries across
+its 4 domains of strategy & leadership, public policy, national delivery, and
+people & processes.
 :::
 
-Using its measurement framework, the Index brings together X individual data
-points from Y sources. Alongside the overall Index results, through this
+Using its measurement framework, the Index brings together 168 individual data
+points from 24 sources. Alongside the overall results of the Index, through this
 website you can: read articles discussing themes and countries covered in the
 results and interviews with those leading reform efforts, explore the data
 in-depth, and read the technical methodology.
@@ -110,8 +113,7 @@ in-depth, and read the technical methodology.
 ## 2024 results
 
 :::{.lead}
-Country A tops the 2024 in-depth Index, country Z is the highest placed country
-on the all country Index.
+Country A tops the 2024 Index.
 :::
 
 ```{ojs, results_chart}
@@ -119,55 +121,55 @@ on the all country Index.
 Plot = import("https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.14/+esm");
 
 dummy_data = [
-  {cc_iso3c: "CC001", value: 1.000, hover_label:   "Country 1: 1.000", country_group: "In-depth Index"},
-  {cc_iso3c: "CC002", value: 0.990, hover_label:   "Country 2: 0.990", country_group: "In-depth Index"},
-  {cc_iso3c: "CC003", value: 0.980, hover_label:   "Country 3: 0.980", country_group: "In-depth Index"},
-  {cc_iso3c: "CC004", value: 0.970, hover_label:   "Country 4: 0.970", country_group: "In-depth Index"},
-  {cc_iso3c: "CC005", value: 0.960, hover_label:   "Country 5: 0.960", country_group: "In-depth Index"},
-  {cc_iso3c: "CC006", value: 0.949, hover_label:   "Country 6: 0.949", country_group: "In-depth Index"},
-  {cc_iso3c: "CC007", value: 0.939, hover_label:   "Country 7: 0.939", country_group: "In-depth Index"},
-  {cc_iso3c: "CC008", value: 0.929, hover_label:   "Country 8: 0.929", country_group: "In-depth Index"},
-  {cc_iso3c: "CC009", value: 0.919, hover_label:   "Country 9: 0.919", country_group: "In-depth Index"},
-  {cc_iso3c: "CC010", value: 0.909, hover_label:  "Country 10: 0.909", country_group: "In-depth Index"},
-  {cc_iso3c: "CC011", value: 0.899, hover_label:  "Country 11: 0.899", country_group: "In-depth Index"},
-  {cc_iso3c: "CC012", value: 0.889, hover_label:  "Country 12: 0.889", country_group: "In-depth Index"},
-  {cc_iso3c: "CC013", value: 0.879, hover_label:  "Country 13: 0.879", country_group: "In-depth Index"},
-  {cc_iso3c: "CC014", value: 0.869, hover_label:  "Country 14: 0.869", country_group: "In-depth Index"},
-  {cc_iso3c: "CC015", value: 0.859, hover_label:  "Country 15: 0.859", country_group: "In-depth Index"},
-  {cc_iso3c: "CC016", value: 0.848, hover_label:  "Country 16: 0.848", country_group: "In-depth Index"},
-  {cc_iso3c: "CC017", value: 0.838, hover_label:  "Country 17: 0.838", country_group: "In-depth Index"},
-  {cc_iso3c: "CC018", value: 0.828, hover_label:  "Country 18: 0.828", country_group: "In-depth Index"},
-  {cc_iso3c: "CC019", value: 0.818, hover_label:  "Country 19: 0.818", country_group: "In-depth Index"},
-  {cc_iso3c: "CC020", value: 0.808, hover_label:  "Country 20: 0.808", country_group: "In-depth Index"},
-  {cc_iso3c: "CC021", value: 0.798, hover_label:  "Country 21: 0.798", country_group: "In-depth Index"},
-  {cc_iso3c: "CC022", value: 0.788, hover_label:  "Country 22: 0.788", country_group: "In-depth Index"},
-  {cc_iso3c: "CC023", value: 0.778, hover_label:  "Country 23: 0.778", country_group: "In-depth Index"},
-  {cc_iso3c: "CC024", value: 0.768, hover_label:  "Country 24: 0.768", country_group: "In-depth Index"},
-  {cc_iso3c: "CC025", value: 0.758, hover_label:  "Country 25: 0.758", country_group: "In-depth Index"},
-  {cc_iso3c: "CC026", value: 0.747, hover_label:  "Country 26: 0.747", country_group: "In-depth Index"},
-  {cc_iso3c: "CC027", value: 0.737, hover_label:  "Country 27: 0.737", country_group: "In-depth Index"},
+  {cc_iso3c: "CC001", value: 1.000, hover_label:   "Country 1: 1.000", country_group: "Global Index"},
+  {cc_iso3c: "CC002", value: 0.990, hover_label:   "Country 2: 0.990", country_group: "Global Index"},
+  {cc_iso3c: "CC003", value: 0.980, hover_label:   "Country 3: 0.980", country_group: "Global Index"},
+  {cc_iso3c: "CC004", value: 0.970, hover_label:   "Country 4: 0.970", country_group: "Global Index"},
+  {cc_iso3c: "CC005", value: 0.960, hover_label:   "Country 5: 0.960", country_group: "Global Index"},
+  {cc_iso3c: "CC006", value: 0.949, hover_label:   "Country 6: 0.949", country_group: "Global Index"},
+  {cc_iso3c: "CC007", value: 0.939, hover_label:   "Country 7: 0.939", country_group: "Global Index"},
+  {cc_iso3c: "CC008", value: 0.929, hover_label:   "Country 8: 0.929", country_group: "Global Index"},
+  {cc_iso3c: "CC009", value: 0.919, hover_label:   "Country 9: 0.919", country_group: "Global Index"},
+  {cc_iso3c: "CC010", value: 0.909, hover_label:  "Country 10: 0.909", country_group: "Global Index"},
+  {cc_iso3c: "CC011", value: 0.899, hover_label:  "Country 11: 0.899", country_group: "Global Index"},
+  {cc_iso3c: "CC012", value: 0.889, hover_label:  "Country 12: 0.889", country_group: "Global Index"},
+  {cc_iso3c: "CC013", value: 0.879, hover_label:  "Country 13: 0.879", country_group: "Global Index"},
+  {cc_iso3c: "CC014", value: 0.869, hover_label:  "Country 14: 0.869", country_group: "Global Index"},
+  {cc_iso3c: "CC015", value: 0.859, hover_label:  "Country 15: 0.859", country_group: "Global Index"},
+  {cc_iso3c: "CC016", value: 0.848, hover_label:  "Country 16: 0.848", country_group: "Global Index"},
+  {cc_iso3c: "CC017", value: 0.838, hover_label:  "Country 17: 0.838", country_group: "Global Index"},
+  {cc_iso3c: "CC018", value: 0.828, hover_label:  "Country 18: 0.828", country_group: "Global Index"},
+  {cc_iso3c: "CC019", value: 0.818, hover_label:  "Country 19: 0.818", country_group: "Global Index"},
+  {cc_iso3c: "CC020", value: 0.808, hover_label:  "Country 20: 0.808", country_group: "Global Index"},
+  {cc_iso3c: "CC021", value: 0.798, hover_label:  "Country 21: 0.798", country_group: "Global Index"},
+  {cc_iso3c: "CC022", value: 0.788, hover_label:  "Country 22: 0.788", country_group: "Global Index"},
+  {cc_iso3c: "CC023", value: 0.778, hover_label:  "Country 23: 0.778", country_group: "Global Index"},
+  {cc_iso3c: "CC024", value: 0.768, hover_label:  "Country 24: 0.768", country_group: "Global Index"},
+  {cc_iso3c: "CC025", value: 0.758, hover_label:  "Country 25: 0.758", country_group: "Global Index"},
+  {cc_iso3c: "CC026", value: 0.747, hover_label:  "Country 26: 0.747", country_group: "Global Index"},
+  {cc_iso3c: "CC027", value: 0.737, hover_label:  "Country 27: 0.737", country_group: "Global Index"},
   {cc_iso3c: "CC028", value: 0.727, hover_label:  "Country 28: 0.727", country_group: "Global Index"},
-  {cc_iso3c: "CC029", value: 0.717, hover_label:  "Country 29: 0.717", country_group: "In-depth Index"},
+  {cc_iso3c: "CC029", value: 0.717, hover_label:  "Country 29: 0.717", country_group: "Global Index"},
   {cc_iso3c: "CC030", value: 0.707, hover_label:  "Country 30: 0.707", country_group: "Global Index"},
-  {cc_iso3c: "CC031", value: 0.697, hover_label:  "Country 31: 0.697", country_group: "In-depth Index"},
-  {cc_iso3c: "CC032", value: 0.687, hover_label:  "Country 32: 0.687", country_group: "In-depth Index"},
-  {cc_iso3c: "CC033", value: 0.677, hover_label:  "Country 33: 0.677", country_group: "In-depth Index"},
-  {cc_iso3c: "CC034", value: 0.667, hover_label:  "Country 34: 0.667", country_group: "In-depth Index"},
-  {cc_iso3c: "CC035", value: 0.657, hover_label:  "Country 35: 0.657", country_group: "In-depth Index"},
-  {cc_iso3c: "CC036", value: 0.646, hover_label:  "Country 36: 0.646", country_group: "In-depth Index"},
-  {cc_iso3c: "CC037", value: 0.636, hover_label:  "Country 37: 0.636", country_group: "In-depth Index"},
-  {cc_iso3c: "CC038", value: 0.626, hover_label:  "Country 38: 0.626", country_group: "In-depth Index"},
+  {cc_iso3c: "CC031", value: 0.697, hover_label:  "Country 31: 0.697", country_group: "Global Index"},
+  {cc_iso3c: "CC032", value: 0.687, hover_label:  "Country 32: 0.687", country_group: "Global Index"},
+  {cc_iso3c: "CC033", value: 0.677, hover_label:  "Country 33: 0.677", country_group: "Global Index"},
+  {cc_iso3c: "CC034", value: 0.667, hover_label:  "Country 34: 0.667", country_group: "Global Index"},
+  {cc_iso3c: "CC035", value: 0.657, hover_label:  "Country 35: 0.657", country_group: "Global Index"},
+  {cc_iso3c: "CC036", value: 0.646, hover_label:  "Country 36: 0.646", country_group: "Global Index"},
+  {cc_iso3c: "CC037", value: 0.636, hover_label:  "Country 37: 0.636", country_group: "Global Index"},
+  {cc_iso3c: "CC038", value: 0.626, hover_label:  "Country 38: 0.626", country_group: "Global Index"},
   {cc_iso3c: "CC039", value: 0.616, hover_label:  "Country 39: 0.616", country_group: "Global Index"},
   {cc_iso3c: "CC040", value: 0.606, hover_label:  "Country 40: 0.606", country_group: "Global Index"},
-  {cc_iso3c: "CC041", value: 0.596, hover_label:  "Country 41: 0.596", country_group: "In-depth Index"},
+  {cc_iso3c: "CC041", value: 0.596, hover_label:  "Country 41: 0.596", country_group: "Global Index"},
   {cc_iso3c: "CC042", value: 0.586, hover_label:  "Country 42: 0.586", country_group: "Global Index"},
   {cc_iso3c: "CC043", value: 0.576, hover_label:  "Country 43: 0.576", country_group: "Global Index"},
   {cc_iso3c: "CC044", value: 0.566, hover_label:  "Country 44: 0.566", country_group: "Global Index"},
-  {cc_iso3c: "CC045", value: 0.556, hover_label:  "Country 45: 0.556", country_group: "In-depth Index"},
-  {cc_iso3c: "CC046", value: 0.545, hover_label:  "Country 46: 0.545", country_group: "In-depth Index"},
+  {cc_iso3c: "CC045", value: 0.556, hover_label:  "Country 45: 0.556", country_group: "Global Index"},
+  {cc_iso3c: "CC046", value: 0.545, hover_label:  "Country 46: 0.545", country_group: "Global Index"},
   {cc_iso3c: "CC047", value: 0.535, hover_label:  "Country 47: 0.535", country_group: "Global Index"},
   {cc_iso3c: "CC048", value: 0.525, hover_label:  "Country 48: 0.525", country_group: "Global Index"},
-  {cc_iso3c: "CC049", value: 0.515, hover_label:  "Country 49: 0.515", country_group: "In-depth Index"},
+  {cc_iso3c: "CC049", value: 0.515, hover_label:  "Country 49: 0.515", country_group: "Global Index"},
   {cc_iso3c: "CC050", value: 0.505, hover_label:  "Country 50: 0.505", country_group: "Global Index"},
   {cc_iso3c: "CC051", value: 0.495, hover_label:  "Country 51: 0.495", country_group: "Global Index"},
   {cc_iso3c: "CC052", value: 0.485, hover_label:  "Country 52: 0.485", country_group: "Global Index"},
@@ -228,23 +230,18 @@ Plot.plot({
   marginRight: 0,
   x: {label: null, axis: null},
   y: {label: null, grid: null, domain: [-0.1, 1], ticks: 0},
-  color: {
-    domain: ["In-depth Index", "Global Index"],
-    range: ["#00629B", "#41B6E6"],
-    legend: true
-  },
   marks: [
     Plot.barY(dummy_data, {
       x: "cc_iso3c",
       y: "value",
-      fill: "country_group",
+      fill: "#00629B",
       sort: {x: "y", reverse: true}
     }),
     Plot.text(dummy_data, {
       x: "cc_iso3c",
       y: -0.01,
       text: "cc_iso3c",
-      fill: "country_group",
+      fill: "#00629B",
       textAnchor: "end",
       rotate: 270,
       sort: {x: "y", reverse: true}
@@ -262,55 +259,50 @@ Plot.plot({
 })
 ```
 
-Of those countries we can measure in-depth against
-[our framework](/methodology/framework.qmd) country A ranks top followed by
-country B and country C. Of those countries we cannot measure in-depth,
-country Z is the highest placed followed by country X and country Y.
-
-Our framework analyses data about national civil services across four domains:
-strategy and leadership; public policy; national delivery; and, people and
-processes.
-
 :::{.align-center}
 [Read more about the overall Index results](overall_results.qmd){.fom-link}
 :::
 
 :::{.grid}
 :::{.g-col-12 .g-col-md-6}
-### Domain 1
-Country B ranks highest for domain 1 with particular strengths in
-theme 1 and theme 2, while Country D comes highest in theme 3.
+### Strategy & leadership
+Country B ranks highest for strategy & leadership with particular strengths in
+strategic capacity and openness & communictions, while Country D comes highest
+in trust & integrity.
 
 [Read more](domain1_results.qmd){.fom-link}
 :::
 :::{.g-col-12 .g-col-md-6}
-### Domain 2
-Country A ranks highest for domain 2, while Country C comes
-in top for theme 4.
+### Public policy
+Country A ranks highest for public policy, while Country C comes
+in top for regulation.
 
 [Read more](domain1_results.qmd){.fom-link}
 :::
 :::
 :::{.grid}
 :::{.g-col-12 .g-col-md-6}
-### Domain 3
-Country A ranks highest for domain 3 with the highest scores for both
-theme 5 and theme 6.
+### National delivery
+Country A ranks highest for national delivery with the highest scores for both
+system oversight and digital services.
 
 [Read more](domain1_results.qmd){.fom-link}
 :::
 :::{.g-col-12 .g-col-md-6}
-### Domain 4
+### People & processes
 Country B ranks highest for domain 4 with the highest scores
-for theme 7, country C ranks highest for theme 8 and country D
-comes top in theme 9.
+for diversity & inclusion, country C ranks highest for HR management and
+country D comes top in procurement.
 
 [Read more](domain1_results.qmd){.fom-link}
 :::
-:::
+:::{.g-col-12 .g-col-md-6}
+### Results by regional and economic groupings
+The benefit of our global approach allows for rich insights by regional and
+economic groupings. Country X comes top in Sub-Saharan Africa, while County Y
+is the highest scoring low income country.
 
-:::{.grid}
-:::{.d-none .d-md-block .g-col-md-3}
+[Read more](domain1_results.qmd){.fom-link}
 :::
 :::{.g-col-12 .g-col-md-6}
 ### Conclusions & next steps
@@ -318,11 +310,10 @@ The results provide an important tool to help countries learn from each other,
 however there remain crucial gaps in the availability of data to fully
 understand how public administrations compare.
 
-[Read our conclusions and our next steps](conclusions.qmd){.fom-link}
-:::
-:::{.d-none .d-md-block .g-col-md-3}
+[Read more](domain1_results.qmd){.fom-link}
 :::
 :::
+
 
 
 
