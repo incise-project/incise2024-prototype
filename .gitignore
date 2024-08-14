@@ -50,5 +50,5 @@ rsconnect/
 
 # Quarto objects
 /.quarto/
-/_site/
+#/_site/
 _publish.yml
